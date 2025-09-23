@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfasl11qbx6hj"]
+
+[ext_resource type="Texture2D" uid="uid://dnn2uo5s3fxt6" path="res://espejomaspastillas.png" id="1_b7ldk"]
+[ext_resource type="Texture2D" uid="uid://cbobfx3aa65ic" path="res://cajaddetexto.PNG" id="2_fndph"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640.00006, 360.00003)
+scale = Vector2(0.5889538, 0.48891816)
+texture = ExtResource("1_b7ldk")
+
+[node name="Dialogo" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 642.99994
+offset_top = 551.00006
+offset_right = 667.71564
+offset_bottom = 595.30145
+scale = Vector2(0.44506073, 0.46497527)
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Dialogo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fndph")

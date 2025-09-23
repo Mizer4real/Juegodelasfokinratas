@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://wege05leot5o"]
+
+[ext_resource type="Texture2D" uid="uid://cykoutpso2hbj" path="res://fondobasura.png" id="1_8f50t"]
+
+[node name="Node2D" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [-2.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575, 321)
+scale = Vector2(0.38405907, 0.36033225)
+texture = ExtResource("1_8f50t")
