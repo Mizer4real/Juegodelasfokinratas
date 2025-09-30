@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://icjjc8y1mnnj"]
+
+[ext_resource type="Script" uid="uid://skk6a1rxyref" path="res://Escenas/ratachef.gd" id="1_gdyxr"]
+[ext_resource type="Texture2D" uid="uid://dapwpsd5tygw0" path="res://Animaciones/whatchef.png" id="2_qx6cd"]
+[ext_resource type="Texture2D" uid="uid://cudrfx2j54181" path="res://Animaciones/seriouschef.png" id="3_0vly5"]
+[ext_resource type="Texture2D" uid="uid://bfq5x8mm6doh5" path="res://Animaciones/hmmchef.png" id="4_uq51t"]
+[ext_resource type="Texture2D" uid="uid://bmugfcncl3ec4" path="res://Animaciones/DAYUMMcheft.png" id="5_54kwm"]
+[ext_resource type="Texture2D" uid="uid://dgm5f0i1oprkj" path="res://Animaciones/mmhhhchef.png" id="6_e8m5b"]
+
+[node name="Player_rat" type="Node2D" node_paths=PackedStringArray("rata_sprite")]
+script = ExtResource("1_gdyxr")
+rata_sprite = NodePath("serius")
+
+[node name="angry" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(627, 477)
+scale = Vector2(1.5229502, 1.422746)
+texture = ExtResource("2_qx6cd")
+
+[node name="serius" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(627, 477.00003)
+scale = Vector2(1.7856051, 1.6554542)
+texture = ExtResource("3_0vly5")
+
+[node name="yeah" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(627, 477)
+scale = Vector2(1.5252095, 1.4108452)
+texture = ExtResource("4_uq51t")
+
+[node name="biceps" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(627, 477)
+scale = Vector2(1.5018502, 1.4079756)
+texture = ExtResource("5_54kwm")
+
+[node name="what" type="Sprite2D" parent="."]
+position = Vector2(627, 477)
+scale = Vector2(1.5503831, 1.4097666)
+texture = ExtResource("6_e8m5b")

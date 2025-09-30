@@ -1,0 +1,63 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhw2tg7mgp86c"]
+
+[ext_resource type="Texture2D" uid="uid://cykoutpso2hbj" path="res://Fondos/fondobasura.png" id="1_3xgr4"]
+[ext_resource type="Script" uid="uid://bisnaeq4l6dqv" path="res://Scripts/character_body_2d.gd" id="2_dxnnp"]
+[ext_resource type="Texture2D" uid="uid://bls4e7uhonpfk" path="res://Animaciones/FULLL WALKINGG2.png" id="3_sdagl"]
+[ext_resource type="Texture2D" uid="uid://d2tu4odhmunuu" path="res://Animaciones/FULLL WALKINGG3.png" id="4_f4wo8"]
+[ext_resource type="Texture2D" uid="uid://bowpekee442id" path="res://Animaciones/FULLL WALKINGG1.png" id="5_hs4c2"]
+[ext_resource type="Texture2D" uid="uid://b66hwbq51o7tu" path="res://Animaciones/FULLL WALKINGG4.png" id="6_yc5pp"]
+[ext_resource type="Texture2D" uid="uid://dregc6m2t1c60" path="res://Animaciones/FULLL WALKINGG5.png" id="7_fbylc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_flj75"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_sdagl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f4wo8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hs4c2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yc5pp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fbylc")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4o18t"]
+radius = 107.0
+height = 290.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360.00003)
+scale = Vector2(0.42633557, 0.4026974)
+texture = ExtResource("1_3xgr4")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(-292, 303.00003)
+scale = Vector2(0.6138456, 0.63226545)
+script = ExtResource("2_dxnnp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(469.17337, 324.23087)
+sprite_frames = SubResource("SpriteFrames_flj75")
+animation = &"walk"
+frame_progress = 0.9466772
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(450, 378)
+shape = SubResource("CapsuleShape2D_4o18t")

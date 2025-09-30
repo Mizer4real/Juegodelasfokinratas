@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bobgoddf2j43e"]
+
+[ext_resource type="Texture2D" uid="uid://4bgl5ddayqsk" path="res://Fondos/322 sin título_20250926172029 2.PNG" id="1_qcua6"]
+[ext_resource type="PackedScene" uid="uid://icjjc8y1mnnj" path="res://ratachef.tscn" id="2_4rcxt"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(-2, -4)
+
+[node name="fondo" type="Sprite2D" parent="."]
+position = Vector2(641, 364)
+scale = Vector2(0.21428637, 0.19877452)
+texture = ExtResource("1_qcua6")
+
+[node name="Player_rat" parent="fondo" instance=ExtResource("2_4rcxt")]
+position = Vector2(-3019.324, -1785.9432)
+scale = Vector2(4.739144, 4.992593)
