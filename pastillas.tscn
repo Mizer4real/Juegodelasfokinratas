@@ -1,0 +1,197 @@
+[gd_scene load_steps=16 format=3 uid="uid://dbj0k2xloa1k2"]
+
+[ext_resource type="Texture2D" uid="uid://31m03qogw5y" path="res://pills2.png" id="1_sw777"]
+[ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="2_osg6v"]
+[ext_resource type="Texture2D" uid="uid://bekysedjfqgke" path="res://fuckinguglyanimation1.png" id="3_8jgvx"]
+[ext_resource type="Texture2D" uid="uid://b06jgytla3aws" path="res://fuckinguglyanimation2.png" id="4_fdd26"]
+[ext_resource type="Texture2D" uid="uid://b0xw5aehxf6j7" path="res://fuckinguglyanimation3.png" id="5_2as8l"]
+[ext_resource type="Texture2D" uid="uid://dxbwxcuvgopkp" path="res://fuckinguglyanimation4.png" id="6_1t7ie"]
+[ext_resource type="Texture2D" uid="uid://3atbmy8ceeyh" path="res://fuckinguglyanimation5.png" id="7_v7ygh"]
+[ext_resource type="Texture2D" uid="uid://bu6icv7fr1mjn" path="res://fuckinguglyanimation6.png" id="8_sxjor"]
+[ext_resource type="Texture2D" uid="uid://whxctkkwgnqw" path="res://fuckinguglyanimation7.png" id="9_0ffae"]
+[ext_resource type="Texture2D" uid="uid://c3ucbkowptfvd" path="res://fuckinguglyanimation8.png" id="10_8h1cm"]
+[ext_resource type="Texture2D" uid="uid://bxtdsvh0ywt2w" path="res://fuckinguglyanimation9.png" id="11_ih1xg"]
+
+[sub_resource type="Animation" id="Animation_fdd26"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackBackground1468370534d5s:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995)]
+}
+
+[sub_resource type="Animation" id="Animation_8jgvx"]
+resource_name = "fade in"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackBackground1468370534d5s:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.13333334, 1.5333333, 3.2333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.13725491, 0.15686275, 0.1882353, 1), Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995), Color(0.13725491, 0.15686275, 0.1882353, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2as8l"]
+_data = {
+&"RESET": SubResource("Animation_fdd26"),
+&"fade in": SubResource("Animation_8jgvx")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_blqcp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 2.01,
+"texture": ExtResource("3_8jgvx")
+}, {
+"duration": 2.01,
+"texture": ExtResource("3_8jgvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fdd26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2as8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1t7ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_v7ygh")
+}, {
+"duration": 1.31,
+"texture": ExtResource("8_sxjor")
+}, {
+"duration": 1.91,
+"texture": ExtResource("9_0ffae")
+}, {
+"duration": 2.41,
+"texture": ExtResource("10_8h1cm")
+}, {
+"duration": 4.71,
+"texture": ExtResource("11_ih1xg")
+}, {
+"duration": 7.11,
+"texture": ExtResource("11_ih1xg")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"temblando ",
+"speed": 16.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Pills2" type="Sprite2D" parent="."]
+modulate = Color(0.38295478, 0.51883537, 0.89254874, 1)
+position = Vector2(645.00006, 360.00003)
+scale = Vector2(0.5425001, 0.40888894)
+texture = ExtResource("1_sw777")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pills2"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_2as8l")
+}
+autoplay = "fade in"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.45394963, 0.5160758, 0.8484086, 1)
+position = Vector2(646.5, 363)
+scale = Vector2(0.9464286, 1.0685716)
+sprite_frames = SubResource("SpriteFrames_blqcp")
+animation = &"temblando "
+autoplay = "temblando "
+frame = 35
+frame_progress = 1.0
+
+[node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
+modulate = Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995)
+position = Vector2(641.00006, 357.5)
+scale = Vector2(0.69166666, 0.5914062)
+texture = ExtResource("2_osg6v")

@@ -1,8 +1,28 @@
-[gd_scene load_steps=8 format=3 uid="uid://bxv6hq5a54fqc"]
+[gd_scene load_steps=23 format=3 uid="uid://bxv6hq5a54fqc"]
 
 [ext_resource type="Texture2D" uid="uid://ctwvxtodx03ju" path="res://318 sin título_20250919174240.PNG" id="1_q0xg8"]
-[ext_resource type="Texture2D" uid="uid://cmhd114tbomov" path="res://318 sin título_20250919200556.PNG" id="1_yogrx"]
-[ext_resource type="Texture2D" uid="uid://qcyjr01pnntt" path="res://318 sin título_20250919174541.PNG" id="2_yogrx"]
+[ext_resource type="Script" uid="uid://p07c5qwbnt2b" path="res://inicio.gd" id="1_qdnke"]
+[ext_resource type="Texture2D" uid="uid://d2ucjlnckpq24" path="res://323 sin título_20250929214215 2.PNG" id="1_xagyt"]
+[ext_resource type="Texture2D" uid="uid://cet2nikqg77r7" path="res://318 sin título_20250928223033.PNG" id="2_xagyt"]
+[ext_resource type="Texture2D" uid="uid://donwmj4q50oba" path="res://318 sin título_20250928222635.PNG" id="3_hpmgr"]
+[ext_resource type="Texture2D" uid="uid://dtybmqsx3bkg2" path="res://Shine-Free-PNG.png" id="3_htw3k"]
+[ext_resource type="Texture2D" uid="uid://yfv0h6bet5ko" path="res://318 sin título_20250928222542.PNG" id="4_w2ra7"]
+[ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="5_7e6sy"]
+[ext_resource type="Texture2D" uid="uid://ks0a5q76cqe0" path="res://318 sin título_20250929222432.PNG" id="5_ml20m"]
+[ext_resource type="Texture2D" uid="uid://cm7ay3b1qu0io" path="res://318 sin título_20250929223014.PNG" id="6_qdnke"]
+[ext_resource type="Texture2D" uid="uid://bl8ugnpoo20ne" path="res://318 sin título_20250929223124.PNG" id="7_i3yf1"]
+[ext_resource type="Texture2D" uid="uid://bvsoq00jlo70v" path="res://318 sin título_20250929222031.PNG" id="8_diet2"]
+[ext_resource type="Texture2D" uid="uid://b1uq1ael3sknq" path="res://318 sin título_20250929223018.PNG" id="9_6b2fa"]
+[ext_resource type="Texture2D" uid="uid://bbfmkqsn7j2ta" path="res://318 sin título_20250929223118.PNG" id="10_hypta"]
+
+[sub_resource type="GDScript" id="GDScript_yogrx"]
+script/source = "extends Node
+
+
+func _on_pressed() -> void:
+	print(\"iniciar juego pressed\")
+	get_tree().change_scene_to_file(\"res://escena1.tscn\")
+"
 
 [sub_resource type="Animation" id="Animation_htw3k"]
 resource_name = "Logo caida"
@@ -10,23 +30,95 @@ length = 6.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../318SinTítulo20250919174240:position")
+tracks/0/path = NodePath("../titulo:position")
 tracks/0/interp = 1
-tracks/0/loop_wrap = true
+tracks/0/loop_wrap = false
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.76666665, 1.0333333, 1.4, 1.6666666, 1.8666667, 2.0666666, 2.2666667, 2.4333334, 2.5666666, 2.6666667, 2.7666667, 2.8333333, 2.9),
+"times": PackedFloat32Array(0, 0.76666665, 1.0333333, 1.4, 1.6666666, 1.8666667, 2.0666666, 2.2666667, 2.4333334, 2.6, 2.7333333, 2.8333333, 2.9333334, 3.0333333),
 "transitions": PackedFloat32Array(3.249021, 0.42044842, 2.3784132, 0.48296762, 2.639016, 0.25881624, 3.4822025, 0.45062512, 3.138338, 0.5547848, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1413.9824, 70.65822), Vector2(1394.374, -103.43782), Vector2(1392.1953, -85.22693), Vector2(1385.6592, -101.616714), Vector2(1385.6592, -96.51721), Vector2(1385.6592, -101.61658), Vector2(1385.6592, -100.159546), Vector2(1385.6592, -102.34509), Vector2(1385.6592, -101.25232), Vector2(1385.6592, -103.07361), Vector2(1385.6592, -101.980835), Vector2(1385.6592, -103.802124), Vector2(1385.6592, -103.07361), Vector2(1385.6592, -104.16638)]
+"values": [Vector2(1413.9824, 70.65822), Vector2(1394.374, -103.43782), Vector2(1392.1953, -85.22693), Vector2(1385.6592, -101.616714), Vector2(1385.6592, -96.51721), Vector2(1385.6592, -101.61658), Vector2(1385.6592, -100.159546), Vector2(1385.6592, -102.34509), Vector2(1385.6592, -101.25232), Vector2(1385.6592, -103.07361), Vector2(1385.6592, -101.980835), Vector2(1385.6592, -103.802124), Vector2(1385.6592, -104.16638), Vector2(1385.6592, -104.16638)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/path = NodePath("../TextureButton:self_modulate")
 tracks/1/interp = 1
-tracks/1/loop_wrap = true
+tracks/1/loop_wrap = false
 tracks/1/keys = {
 "times": PackedFloat32Array(1.8333334, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Sprite2D2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 0.36666667, 0.73333335, 1, 1.3666667, 1.6333333, 1.8666667, 2.0666666, 2.2666667, 2.4333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-5.988, 1), Vector2(-3.594, 0.6), Vector2(0, 0), Vector2(-3.592, 0.6), Vector2(2.1787095, -0.36421764), Vector2(3.376, -0.564), Vector2(2.1787095, -0.36421764), Vector2(2.179, -0.364), Vector2(2.1787095, -0.36421764), Vector2(2.1787095, -0.36421764)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Sprite2D2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.033333335, 0.73333335, 1.0333333, 1.3666667, 1.6666666, 1.8666667, 2.0666666, 2.2666667, 2.4333334, 2.5666666, 2.6666667, 2.7666667, 2.8333333, 2.9),
+"transitions": PackedFloat32Array(1, 1, 2.3784132, 0.48296762, 2.639016, 0.25881624, 3.4822025, 0.45062512, 3.138338, 0.5547848, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1385.659, 200), Vector2(1385.6593, -102.70937), Vector2(1392.1953, -85.22693), Vector2(1385.6592, -101.616714), Vector2(1385.6592, -96.51721), Vector2(1385.6592, -101.61658), Vector2(1385.6592, -100.159546), Vector2(1385.6592, -102.34509), Vector2(1385.6592, -101.25232), Vector2(1385.6592, -103.07361), Vector2(1385.6592, -101.980835), Vector2(1385.6592, -103.802124), Vector2(1385.6592, -103.07361), Vector2(1385.6592, -104.16638)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Sprite2D2:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.1, 1.1),
+"transitions": PackedFloat32Array(1, 0.16493852),
+"update": 1,
+"values": [true, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Sprite2D2:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(-0.46666658, 0.033333335, 5.9666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.064650843716541, 0.014233749, 0.10471975511965978]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../TextureButton/TextureButton:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1.8, 2.9666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../TextureButton/TextureButton2:self_modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.8, 2.9666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -37,7 +129,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../318SinTítulo20250919174240:position")
+tracks/0/path = NodePath("../titulo:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -58,54 +150,182 @@ tracks/1/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Sprite2D2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1385.6593, -102.70937)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Sprite2D2:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.1787095, -0.36421764)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Sprite2D2:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Sprite2D2:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_6b2fa"]
+resource_name = "brillo"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x8a4r"]
 _data = {
 &"Logo caida": SubResource("Animation_htw3k"),
-&"RESET": SubResource("Animation_7e6sy")
+&"RESET": SubResource("Animation_7e6sy"),
+&"brillo": SubResource("Animation_6b2fa")
 }
 
-[sub_resource type="GDScript" id="GDScript_yogrx"]
-script/source = "extends Node
+[sub_resource type="Animation" id="Animation_xagyt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.100000024),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
+[sub_resource type="Animation" id="Animation_x8a4r"]
+resource_name = "fade-out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.12941177, 0.14901961, 0.18039216, 0)]
+}
 
-"
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hpmgr"]
+_data = {
+&"RESET": SubResource("Animation_xagyt"),
+&"fade-out": SubResource("Animation_x8a4r")
+}
 
 [node name="Inicio" type="Node2D"]
 scale = Vector2(0.45898733, -2.7456112)
+script = ExtResource("1_qdnke")
+metadata/_edit_horizontal_guides_ = [2.0, 0.0]
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(1394.374, -132.93944)
-scale = Vector2(1.457551, -0.24464603)
-texture = ExtResource("1_yogrx")
+[node name="fondo" type="Sprite2D" parent="."]
+position = Vector2(1394.374, -132.57523)
+scale = Vector2(1.4575517, -0.24464601)
+texture = ExtResource("1_xagyt")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 851.8755
+offset_top = -144.23096
+offset_right = 2771.8755
+offset_bottom = 935.76904
+scale = Vector2(0.5010493, -0.087961964)
+texture_normal = ExtResource("2_xagyt")
+texture_pressed = ExtResource("3_hpmgr")
+texture_hover = ExtResource("4_w2ra7")
+script = SubResource("GDScript_yogrx")
+
+[node name="TextureButton" type="TextureButton" parent="TextureButton"]
+layout_mode = 0
+offset_left = -4.348572
+offset_top = 306.39734
+offset_right = 1915.6514
+offset_bottom = 1386.3973
+texture_normal = ExtResource("5_ml20m")
+texture_pressed = ExtResource("6_qdnke")
+texture_hover = ExtResource("7_i3yf1")
+
+[node name="TextureButton2" type="TextureButton" parent="TextureButton"]
+layout_mode = 0
+offset_left = -4.3485317
+offset_top = 612.80396
+offset_right = 1915.6515
+offset_bottom = 1692.804
+texture_normal = ExtResource("8_diet2")
+texture_pressed = ExtResource("9_6b2fa")
+texture_hover = ExtResource("10_hypta")
+
+[node name="noidea" type="Sprite2D" parent="."]
+position = Vector2(-0.00026595575, 1.6672562e-05)
+scale = Vector2(1.0000005, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-rotation = -3.1415927
-scale = Vector2(-1.361262, 0.20642251)
+scale = Vector2(1.3612621, -0.20642251)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
 &"": SubResource("AnimationLibrary_x8a4r")
 }
+autoplay = "Logo caida"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D/AnimationPlayer"]
 
-[node name="318SinTítulo20250919174240" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(1385.6593, -102.70937)
+scale = Vector2(2.1787095, -0.36421764)
+texture = ExtResource("3_htw3k")
+
+[node name="titulo" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(1220.0774, -59.003265)
-scale = Vector2(0.79874307, -0.13383137)
+scale = Vector2(0.79874355, -0.13383137)
 texture = ExtResource("1_q0xg8")
 
-[node name="TextureButton" type="TextureButton" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = 891.09216
-offset_top = -156.24937
-offset_right = 2811.0923
-offset_bottom = 923.7506
-scale = Vector2(0.5010493, -0.087961964)
-texture_normal = ExtResource("2_yogrx")
-script = SubResource("GDScript_yogrx")
+[node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
+position = Vector2(1394.374, -130.38992)
+scale = Vector2(1.4577243, 0.22023776)
+texture = ExtResource("5_7e6sy")
 
-[node name="TextureButton2" type="TextureButton" parent="."]
-offset_right = 1920.0
-offset_bottom = 1080.0
-scale = Vector2(0.7738072, 0.12968206)
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BlackBackground1468370534d5s"]
+libraries = {
+&"": SubResource("AnimationLibrary_hpmgr")
+}
+autoplay = "fade-out"
+speed_scale = 0.594
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="TextureButton/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton/TextureButton2" to="." method="_on_texture_button_2_pressed"]
