@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://wege05leot5o"]
+
+[node name="Node2D" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [-2.0]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfasl11qbx6hj"]
+
+[ext_resource type="Texture2D" uid="uid://dnn2uo5s3fxt6" path="res://Fondos/espejomaspastillas.png" id="1_b7ldk"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640.00006, 360.00003)
+scale = Vector2(0.5889538, 0.48891816)
+texture = ExtResource("1_b7ldk")

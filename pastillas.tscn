@@ -1,6 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://dbj0k2xloa1k2"]
+[gd_scene load_steps=17 format=3 uid="uid://dbj0k2xloa1k2"]
 
-[ext_resource type="Texture2D" uid="uid://31m03qogw5y" path="res://pills2.png" id="1_sw777"]
+[ext_resource type="Texture2D" uid="uid://31m03qogw5y" path="res://Fondos/pills2.png" id="1_sw777"]
 [ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="2_osg6v"]
 [ext_resource type="Texture2D" uid="uid://bekysedjfqgke" path="res://fuckinguglyanimation1.png" id="3_8jgvx"]
 [ext_resource type="Texture2D" uid="uid://b06jgytla3aws" path="res://fuckinguglyanimation2.png" id="4_fdd26"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://whxctkkwgnqw" path="res://fuckinguglyanimation7.png" id="9_0ffae"]
 [ext_resource type="Texture2D" uid="uid://c3ucbkowptfvd" path="res://fuckinguglyanimation8.png" id="10_8h1cm"]
 [ext_resource type="Texture2D" uid="uid://bxtdsvh0ywt2w" path="res://fuckinguglyanimation9.png" id="11_ih1xg"]
+[ext_resource type="FontFile" uid="uid://bhe0md5wbxb2h" path="res://Jersey_10_fuentedetexto/Jersey10-Regular.ttf" id="12_fdd26"]
 
 [sub_resource type="Animation" id="Animation_fdd26"]
 length = 0.001
@@ -29,7 +30,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_8jgvx"]
 resource_name = "fade in"
-length = 10.0
+length = 20.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -37,10 +38,22 @@ tracks/0/path = NodePath("BlackBackground1468370534d5s:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.13333334, 1.5333333, 3.2333333),
+"times": PackedFloat32Array(0.13333334, 1.6333333, 3.2333333),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(0.13725491, 0.15686275, 0.1882353, 1), Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995), Color(0.13725491, 0.15686275, 0.1882353, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3.6, 5.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2as8l"]
@@ -195,3 +208,14 @@ modulate = Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995)
 position = Vector2(641.00006, 357.5)
 scale = Vector2(0.69166666, 0.5914062)
 texture = ExtResource("2_osg6v")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995)
+offset_left = -6.0
+offset_top = 257.0
+offset_right = 1280.0
+offset_bottom = 980.0
+theme_override_fonts/font = ExtResource("12_fdd26")
+theme_override_font_sizes/font_size = 120
+text = "But it refused..."
+horizontal_alignment = 1

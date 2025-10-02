@@ -1,0 +1,122 @@
+[gd_scene load_steps=13 format=3 uid="uid://bkh8030l3mevh"]
+
+[ext_resource type="Texture2D" uid="uid://4bgl5ddayqsk" path="res://Fondos/322 sin título_20250926172029 2.PNG" id="1_l8sl0"]
+[ext_resource type="Texture2D" uid="uid://cudrfx2j54181" path="res://Animaciones/seriouschef.png" id="1_r4ywv"]
+[ext_resource type="Texture2D" uid="uid://dapwpsd5tygw0" path="res://Animaciones/whatchef.png" id="2_s384y"]
+[ext_resource type="Texture2D" uid="uid://dgm5f0i1oprkj" path="res://Animaciones/mmhhhchef.png" id="3_pbi14"]
+[ext_resource type="Texture2D" uid="uid://bfq5x8mm6doh5" path="res://Animaciones/hmmchef.png" id="4_fe1y1"]
+[ext_resource type="Texture2D" uid="uid://bmugfcncl3ec4" path="res://Animaciones/DAYUMMcheft.png" id="5_l8sl0"]
+[ext_resource type="Texture2D" uid="uid://c3hwietno252j" path="res://Elementos/317 sin título_20250919013436 (1).PNG" id="7_htebs"]
+[ext_resource type="FontFile" uid="uid://bhe0md5wbxb2h" path="res://Jersey_10_fuentedetexto/Jersey10-Regular.ttf" id="8_n6bou"]
+[ext_resource type="Script" path="res://ratachef.gd" id="9_3s286"]
+
+[sub_resource type="Theme" id="Theme_up7n4"]
+default_font = ExtResource("8_n6bou")
+
+[sub_resource type="Theme" id="Theme_ql05j"]
+default_font = ExtResource("8_n6bou")
+
+[sub_resource type="FontVariation" id="FontVariation_hrb4w"]
+base_font = ExtResource("8_n6bou")
+
+[node name="Capitulo 1" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Fondo" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(642.00006, 364.00003)
+scale = Vector2(0.21339013, 0.20016883)
+texture = ExtResource("1_l8sl0")
+
+[node name="Personajes_ratachef" type="Node2D" parent="."]
+
+[node name="chef serio_v" type="Sprite2D" parent="Personajes_ratachef"]
+position = Vector2(648, 465.00006)
+scale = Vector2(2.0107806, 1.7924364)
+texture = ExtResource("1_r4ywv")
+
+[node name="chef enojado" type="Sprite2D" parent="Personajes_ratachef"]
+visible = false
+position = Vector2(644, 465)
+scale = Vector2(1.663771, 1.5387901)
+texture = ExtResource("2_s384y")
+
+[node name="chef cara de weon" type="Sprite2D" parent="Personajes_ratachef"]
+visible = false
+position = Vector2(649, 466)
+scale = Vector2(1.720384, 1.5384594)
+texture = ExtResource("3_pbi14")
+
+[node name="chef feliz" type="Sprite2D" parent="Personajes_ratachef"]
+visible = false
+position = Vector2(647, 466.00003)
+scale = Vector2(1.6968696, 1.541066)
+texture = ExtResource("4_fe1y1")
+
+[node name="chef pose rica" type="Sprite2D" parent="Personajes_ratachef"]
+visible = false
+position = Vector2(648, 462)
+scale = Vector2(1.7204641, 1.546096)
+texture = ExtResource("5_l8sl0")
+
+[node name="dialogo_base" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 190.99998
+offset_top = 210.0
+offset_right = 230.99998
+offset_bottom = 250.0
+scale = Vector2(18.449547, 15.004109)
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="dialogo_base"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 3.999939
+offset_right = 1882.0
+offset_bottom = 1044.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.02271781, 0.027369134)
+texture = ExtResource("7_htebs")
+
+[node name="Dialogo_texto" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_up7n4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo_texto"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 14.0
+offset_right = 48.0
+offset_bottom = 54.0
+scale = Vector2(1.1054469, 1.0113673)
+theme = SubResource("Theme_ql05j")
+theme_override_fonts/normal_font = SubResource("FontVariation_hrb4w")
+theme_override_font_sizes/normal_font_size = 13
+
+[node name="ratachef" type="Control" parent="Dialogo_texto"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("9_3s286")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo_texto/ratachef"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Node" type="Node" parent="Dialogo_texto/ratachef"]
+
+[node name="nombre" type="Control" parent="Dialogo_texto"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
