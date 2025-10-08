@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://dbj0k2xloa1k2"]
+[gd_scene load_steps=18 format=3 uid="uid://dbj0k2xloa1k2"]
 
+[ext_resource type="Script" uid="uid://dro1tofk243sl" path="res://pastillas.gd" id="1_2as8l"]
 [ext_resource type="Texture2D" uid="uid://31m03qogw5y" path="res://Fondos/pills2.png" id="1_sw777"]
 [ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="2_osg6v"]
 [ext_resource type="Texture2D" uid="uid://bekysedjfqgke" path="res://fuckinguglyanimation1.png" id="3_8jgvx"]
@@ -30,7 +31,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_8jgvx"]
 resource_name = "fade in"
-length = 20.0
+length = 7.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -50,10 +51,10 @@ tracks/1/path = NodePath("Label:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(3.6, 5.3),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(3.6, 5.3, 7),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995), Color(1, 1, 1, 1)]
+"values": [Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995), Color(1, 1, 1, 1), Color(0.13857585, 0.15797728, 0.18901956, 0.0105262995)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2as8l"]
@@ -179,6 +180,7 @@ animations = [{
 }]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_2as8l")
 
 [node name="Pills2" type="Sprite2D" parent="."]
 modulate = Color(0.38295478, 0.51883537, 0.89254874, 1)
@@ -219,3 +221,5 @@ theme_override_fonts/font = ExtResource("12_fdd26")
 theme_override_font_sizes/font_size = 120
 text = "But it refused..."
 horizontal_alignment = 1
+
+[connection signal="animation_finished" from="Pills2/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://dhw2tg7mgp86c"]
+[gd_scene load_steps=21 format=3 uid="uid://dhw2tg7mgp86c"]
 
+[ext_resource type="Script" uid="uid://dguqeav1rakdk" path="res://Escenas/escena_2.gd" id="1_1key6"]
 [ext_resource type="Texture2D" uid="uid://cykoutpso2hbj" path="res://Fondos/fondobasura.png" id="1_3xgr4"]
 [ext_resource type="Script" uid="uid://bisnaeq4l6dqv" path="res://Scripts/character_body_2d.gd" id="2_dxnnp"]
 [ext_resource type="Texture2D" uid="uid://bls4e7uhonpfk" path="res://Animaciones/FULLL WALKINGG2.png" id="3_sdagl"]
@@ -7,6 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://bowpekee442id" path="res://Animaciones/FULLL WALKINGG1.png" id="5_hs4c2"]
 [ext_resource type="Texture2D" uid="uid://b66hwbq51o7tu" path="res://Animaciones/FULLL WALKINGG4.png" id="6_yc5pp"]
 [ext_resource type="Texture2D" uid="uid://dregc6m2t1c60" path="res://Animaciones/FULLL WALKINGG5.png" id="7_fbylc"]
+[ext_resource type="Texture2D" uid="uid://dn6kgljyuwcd5" path="res://dialogues/intro 2/324 sin título_20251003161413.PNG" id="8_aly1t"]
+[ext_resource type="Texture2D" uid="uid://d361hh5wtsvjv" path="res://317 sin título_20250929231601.PNG" id="10_12374"]
+[ext_resource type="Texture2D" uid="uid://bhh2njaq5rq2n" path="res://317 sin título_20250929231545.PNG" id="11_vvm0f"]
+[ext_resource type="Texture2D" uid="uid://ccfavfiybhjuy" path="res://317 sin título_20250929231556.PNG" id="12_6mlct"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_flj75"]
 animations = [{
@@ -40,7 +45,82 @@ animations = [{
 radius = 107.0
 height = 290.0
 
+[sub_resource type="Animation" id="Animation_sfgxr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_w21pn"]
+resource_name = "fade in but yellow"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 1.4666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ye2u"]
+_data = {
+&"RESET": SubResource("Animation_sfgxr"),
+&"fade in but yellow": SubResource("Animation_w21pn")
+}
+
+[sub_resource type="Animation" id="Animation_m06ph"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_yashq"]
+resource_name = "fade in"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.099999905, 3.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mpoy4"]
+_data = {
+&"RESET": SubResource("Animation_m06ph"),
+&"fade in": SubResource("Animation_yashq")
+}
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_1key6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(640, 360.00003)
@@ -61,3 +141,31 @@ frame_progress = 0.9466772
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(450, 378)
 shape = SubResource("CapsuleShape2D_4o18t")
+
+[node name="324SinTítulo20251003161413" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(645, 303)
+texture = ExtResource("8_aly1t")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="324SinTítulo20251003161413"]
+libraries = {
+&"": SubResource("AnimationLibrary_8ye2u")
+}
+autoplay = "fade in but yellow"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -438.0
+offset_top = -347.0
+offset_right = 1482.0
+offset_bottom = 733.0
+texture_normal = ExtResource("10_12374")
+texture_pressed = ExtResource("11_vvm0f")
+texture_hover = ExtResource("12_6mlct")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureButton"]
+libraries = {
+&"": SubResource("AnimationLibrary_mpoy4")
+}
+autoplay = "fade in"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

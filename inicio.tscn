@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://8f6m6p1g4iym"]
+[gd_scene load_steps=31 format=3 uid="uid://8f6m6p1g4iym"]
 
 [ext_resource type="Script" uid="uid://p07c5qwbnt2b" path="res://inicio.gd" id="1_qdnke"]
 [ext_resource type="Texture2D" uid="uid://d2ucjlnckpq24" path="res://323 sin título_20250929214215 2.PNG" id="1_ylum6"]
@@ -16,28 +16,13 @@
 [ext_resource type="FontFile" uid="uid://bhe0md5wbxb2h" path="res://Jersey_10_fuentedetexto/Jersey10-Regular.ttf" id="13_eqp14"]
 [ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="13_ml20m"]
 [ext_resource type="Texture2D" uid="uid://cb57gxsgksgj4" path="res://Nombre del proyecto 14.PNG" id="15_x7nby"]
+[ext_resource type="AudioStream" uid="uid://bo4fky5dqpy4u" path="res://addons/button-305770.mp3" id="16_47erp"]
 [ext_resource type="Texture2D" uid="uid://btooa3ifvt1sw" path="res://Nombre del proyecto 15.PNG" id="16_eqp14"]
 [ext_resource type="Texture2D" uid="uid://d20hamy0nqvbw" path="res://Nombre del proyecto 17.PNG" id="17_47erp"]
 [ext_resource type="Texture2D" uid="uid://cr44sqydm5p6e" path="res://Nombre del proyecto 18.PNG" id="18_ha1d8"]
 [ext_resource type="Texture2D" uid="uid://m7s2rkts4ybj" path="res://Nombre del proyecto 19.PNG" id="19_cpppf"]
 [ext_resource type="Texture2D" uid="uid://bfva4y6jad3uq" path="res://Nombre del proyecto 20.PNG" id="20_5vwki"]
 [ext_resource type="Texture2D" uid="uid://m5h11jvktka8" path="res://Nombre del proyecto 21.PNG" id="21_dwcrn"]
-
-[sub_resource type="Animation" id="Animation_qdnke"]
-resource_name = "fade_out"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../BlackBackground1468370534d5s:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.033333335, 1.9666667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
 
 [sub_resource type="Animation" id="Animation_i3yf1"]
 length = 0.001
@@ -212,6 +197,22 @@ tracks/7/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 0.95686275, 0.9137255, 0), Color(1, 0.95686275, 0.9137255, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qdnke"]
+resource_name = "fade_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../BlackBackground1468370534d5s:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 1.9666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6b2fa"]
@@ -401,6 +402,9 @@ texture_pressed = ExtResource("5_hpmgr")
 texture_hover = ExtResource("4_x8a4r")
 metadata/_edit_lock_ = true
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="main/iniciar_juego"]
+stream = ExtResource("16_47erp")
+
 [node name="opciones" type="TextureButton" parent="main"]
 modulate = Color(1, 0.95686275, 0.9137255, 1)
 layout_mode = 1
@@ -421,6 +425,9 @@ texture_pressed = ExtResource("8_ml20m")
 texture_hover = ExtResource("9_qdnke")
 metadata/_edit_lock_ = true
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="main/opciones"]
+stream = ExtResource("16_47erp")
+
 [node name="cerrar_juego" type="TextureButton" parent="main"]
 modulate = Color(1, 0.95686275, 0.9137255, 0)
 layout_mode = 1
@@ -440,6 +447,9 @@ texture_normal = ExtResource("10_i3yf1")
 texture_pressed = ExtResource("11_diet2")
 texture_hover = ExtResource("12_6b2fa")
 metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="main/cerrar_juego"]
+stream = ExtResource("16_47erp")
 
 [node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
 position = Vector2(42, 14)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dfasl11qbx6hj"]
 
-[ext_resource type="Texture2D" uid="uid://dnn2uo5s3fxt6" path="res://espejomaspastillas.png" id="1_b7ldk"]
+[ext_resource type="Texture2D" uid="uid://dnn2uo5s3fxt6" path="res://Fondos/espejomaspastillas.png" id="1_b7ldk"]
 [ext_resource type="Script" uid="uid://binvxx8adv2sb" path="res://escena_1.gd" id="1_m06ph"]
 [ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="2_fndph"]
 [ext_resource type="Texture2D" uid="uid://d361hh5wtsvjv" path="res://317 sin título_20250929231601.PNG" id="3_yashq"]
@@ -44,6 +44,21 @@ _data = {
 &"fade-out": SubResource("Animation_x8a4r")
 }
 
+[sub_resource type="Animation" id="Animation_m06ph"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_yashq"]
 resource_name = "fade in"
 length = 4.0
@@ -58,21 +73,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_m06ph"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mpoy4"]
