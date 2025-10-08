@@ -67,7 +67,7 @@ func _ready() -> void:
     add_child(mutation_cooldown)
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
     progress.visible = not dialogue_label.is_typing and dialogue_line.responses.size() == 0
 
 

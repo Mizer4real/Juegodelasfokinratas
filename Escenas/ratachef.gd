@@ -1,8 +1,11 @@
 extends Node2D
 
+const MYDIALOGUE_1 = preload("res://dialogues/untitled.dialogue") 
+const MYDIALOGUE_9 = preload("res://dialoguedespues.dialogue")
 
-@export var rata_sprite: Sprite2D
+@onready var arrow_button = $ArrowButton 
 
+<<<<<<< HEAD
    
 var linea_a_pose = {
     "Buenas, ¿este es el lugar donde se puede conseguir un techo sin tantas preguntas, eh?": "what",
@@ -50,10 +53,32 @@ func cambiar_pose(pose_name: String):
 const MY_DIALOGUE = preload("res://dialogues/untitled.dialogue")
 
 var is_dialogue_active = false
+=======
+func _ready(): 
+    arrow_button.visible = false
+    DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
+    
+    DialogueManager.show_dialogue_balloon(MYDIALOGUE_1, "start")
+    
+func _on_dialogue_ended(resource):
+    if resource == MYDIALOGUE_1:
+        DialogueManager.show_dialogue_balloon(MYDIALOGUE_9, "start")
+    elif resource == MYDIALOGUE_9:
+        arrow_button.visible = true
+        
+        
+func _on_ArrowButton_pressed() -> void:
+    get_tree().change_scene_to_file("res://Escenas/fondoescena3.tscn")
+
+
+
+    
+>>>>>>> fc2e7d1e92031906f96a3d05447e7d4ae20981e2
 
 
 
 
+<<<<<<< HEAD
     
     
     
@@ -79,10 +104,22 @@ func _on_dialogue_ended(_dialogue):
     
 
     
+=======
+
+>>>>>>> fc2e7d1e92031906f96a3d05447e7d4ae20981e2
+            
+
+
+    
+<<<<<<< HEAD
+        
+
+=======
             
 
 
     
         
 
+>>>>>>> fc2e7d1e92031906f96a3d05447e7d4ae20981e2
     

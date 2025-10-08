@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://dfasl11qbx6hj"]
+[gd_scene load_steps=14 format=3 uid="uid://52ni44xrnwe8"]
 
 [ext_resource type="Texture2D" uid="uid://dnn2uo5s3fxt6" path="res://Fondos/espejomaspastillas.png" id="1_b7ldk"]
 [ext_resource type="Script" uid="uid://binvxx8adv2sb" path="res://escena_1.gd" id="1_m06ph"]
 [ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="2_fndph"]
+[ext_resource type="Script" uid="uid://62oxnm6iqpy6" path="res://Animaciones/dialogo.gd" id="3_0enja"]
 [ext_resource type="Texture2D" uid="uid://d361hh5wtsvjv" path="res://317 sin título_20250929231601.PNG" id="3_yashq"]
 [ext_resource type="Texture2D" uid="uid://bhh2njaq5rq2n" path="res://317 sin título_20250929231545.PNG" id="4_m06ph"]
 [ext_resource type="Texture2D" uid="uid://ccfavfiybhjuy" path="res://317 sin título_20250929231556.PNG" id="5_mpoy4"]
@@ -98,6 +99,7 @@ offset_top = 551.00006
 offset_right = 667.71564
 offset_bottom = 595.30145
 scale = Vector2(0.44506073, 0.46497527)
+script = ExtResource("3_0enja")
 metadata/_edit_group_ = true
 
 [node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
