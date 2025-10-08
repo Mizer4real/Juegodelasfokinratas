@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dcsgerorcwx5o"
+path="res://.godot/imported/dialogoareapart4.dialogue-4b536e20ac6feab00db4981d8a60941d.tres"
+
+[deps]
+
+source_file="res://dialogoareapart4.dialogue"
+dest_files=["res://.godot/imported/dialogoareapart4.dialogue-4b536e20ac6feab00db4981d8a60941d.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,12 @@
+~ start
+Rata Chef(Carletto):  Excelente, hay suficiente espacio para la trattoria. ¿Y el área? ¿Va bene?
+- 4⋅25²
+	Rata Chef(Carletto): Esta fórmula parece para un cubo, ¿seguro?
+	=> start
+- 6⋅25²
+	Rata Chef(Carletto): También es para cubo, no va
+	=> start
+- 2π⋅r(h+r)
+	Rata Chef(Carletto): ¡Exacto! Esta es la correcta...
+	Rata Chef(Carletto): Mira: 2π⋅20⋅(80+20)= 2π⋅20⋅100 ≈ 12566,37cm²
+=> END

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://kj7aw5drdm4k"]
+
+[ext_resource type="PackedScene" uid="uid://dt0jx5celyxm8" path="res://next_button.tscn" id="1_q514o"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="NextButton" parent="." instance=ExtResource("1_q514o")]

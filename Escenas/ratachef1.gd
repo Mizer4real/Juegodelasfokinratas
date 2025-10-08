@@ -3,10 +3,10 @@ extends Node2D
 const MYDIALOGUE_1 = preload("res://dialogues/untitled.dialogue") 
 const MYDIALOGUE_9 = preload("res://dialoguedespues.dialogue")
 
-@onready var arrow_button = $ArrowButton 
+
 
 func _ready(): 
-    arrow_button.visible = false
+   
     DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
     
     DialogueManager.show_dialogue_balloon(MYDIALOGUE_1, "start")
@@ -14,12 +14,9 @@ func _ready():
 func _on_dialogue_ended(resource):
     if resource == MYDIALOGUE_1:
         DialogueManager.show_dialogue_balloon(MYDIALOGUE_9, "start")
-    elif resource == MYDIALOGUE_9:
-        arrow_button.visible = true
+   
         
-        
-func _on_ArrowButton_pressed() -> void:
-    get_tree().change_scene_to_file("res://Escenas/fondoescena3.tscn")
+
 
 
 

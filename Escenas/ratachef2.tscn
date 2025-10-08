@@ -7,9 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://bfq5x8mm6doh5" path="res://Animaciones/hmmchef.png" id="4_0vly5"]
 [ext_resource type="Texture2D" uid="uid://bmugfcncl3ec4" path="res://Animaciones/DAYUMMcheft.png" id="5_uq51t"]
 
-[node name="Player_rat" type="Node2D" node_paths=PackedStringArray("rata_sprite")]
+[node name="Player_rat" type="Node2D"]
 script = ExtResource("1_51cb6")
-rata_sprite = NodePath("serius")
 
 [node name="angry" type="Sprite2D" parent="."]
 visible = false

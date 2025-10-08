@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://b25cbx02nfduw"]
+
+[ext_resource type="Texture2D" uid="uid://4bgl5ddayqsk" path="res://Fondos/322 sin título_20250926172029 2.PNG" id="1_f3qpr"]
+[ext_resource type="PackedScene" uid="uid://ce7g5l3k1b012" path="res://Animaciones/ratachef4.tscn" id="2_fimh0"]
+[ext_resource type="PackedScene" uid="uid://dt0jx5celyxm8" path="res://next_button.tscn" id="3_fimh0"]
+
+[sub_resource type="GDScript" id="GDScript_f3qpr"]
+script/source = "extends Node2D
+
+const MYDIALOGUE_6 = preload(\"res://dialogo6.dialogue\") 
+
+func _ready():
+    DialogueManager.show_dialogue_balloon(MYDIALOGUE_6, \"start\")
+    
+    
+
+    
+    
+
+  
+
+
+
+    
+
+
+
+
+
+            
+
+
+    
+            
+
+
+    
+        
+
+    
+"
+
+[node name="main" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(641, 361)
+scale = Vector2(0.21330032, 0.19885612)
+texture = ExtResource("1_f3qpr")
+
+[node name="Player_rat" parent="." instance=ExtResource("2_fimh0")]
+position = Vector2(0, 2)
+scale = Vector2(1.013, 1)
+script = SubResource("GDScript_f3qpr")
+
+[node name="NextButton" parent="Player_rat" instance=ExtResource("3_fimh0")]

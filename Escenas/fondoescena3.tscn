@@ -1,15 +1,18 @@
 [gd_scene load_steps=4 format=3 uid="uid://8tpvgsaspd6e"]
 
 [ext_resource type="Texture2D" uid="uid://4bgl5ddayqsk" path="res://Fondos/322 sin título_20250926172029 2.PNG" id="1_x4top"]
-[ext_resource type="PackedScene" uid="uid://dktl1rb1gbs0h" path="res://Escenas/ratachef.tscn" id="2_w22lv"]
-[ext_resource type="Script" uid="uid://ce36qwjb36j87" path="res://Escenas/ratachef2.gd" id="3_w22lv"]
+[ext_resource type="PackedScene" uid="uid://icjjc8y1mnnj" path="res://ratachef.tscn" id="2_x4top"]
+[ext_resource type="PackedScene" uid="uid://dt0jx5celyxm8" path="res://next_button.tscn" id="3_w22lv"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Fondo" type="Sprite2D" parent="."]
-position = Vector2(640.00006, 365)
-scale = Vector2(0.21307302, 0.20101963)
+position = Vector2(640.55475, 358.74997)
+scale = Vector2(0.21351825, 0.19930555)
 texture = ExtResource("1_x4top")
 
-[node name="Player_rat" parent="." instance=ExtResource("2_w22lv")]
-script = ExtResource("3_w22lv")
+[node name="Player_rat" parent="." instance=ExtResource("2_x4top")]
+position = Vector2(0, 2)
+scale = Vector2(1.013, 1)
+
+[node name="NextButton" parent="Player_rat" instance=ExtResource("3_w22lv")]

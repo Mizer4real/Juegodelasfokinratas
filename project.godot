@@ -36,7 +36,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://untitled.dialogue", "res://dialogues/untitled.dialogue", "res://dialogues/dialogo2.dialogue", "res://dialogues/dialogo2part2.dialogue")
+locale/translations_pot_files=PackedStringArray("res://untitled.dialogue", "res://dialogues/untitled.dialogue", "res://dialogues/dialogo2part2.dialogue", "res://dialogo2part3.dialogue", "res://prologo.dialogue", "res://dialogo2.dialogue", "res://dialoguedespues.dialogue", "res://dialoguearea.dialogue", "res://dialogoareapart2.dialogue", "res://dialogoareapart3.dialogue", "res://dialogoareapart4.dialogue", "res://dialogo6.dialogue")
 
 [rendering]
 
