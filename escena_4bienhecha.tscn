@@ -1,20 +1,55 @@
-[gd_scene load_steps=5 format=3 uid="uid://brbhq8umu2vyl"]
+[gd_scene load_steps=8 format=3 uid="uid://brbhq8umu2vyl"]
 
-[ext_resource type="Texture2D" uid="uid://4bgl5ddayqsk" path="res://Fondos/322 sin título_20250926172029 2.PNG" id="1_yuv8m"]
+[ext_resource type="Texture2D" uid="uid://dtynnutm21s8t" path="res://addons/322 sin título_20251022223248.PNG" id="1_w5qi4"]
 [ext_resource type="PackedScene" uid="uid://dktl1rb1gbs0h" path="res://Escenas/ratachef2.tscn" id="2_porbi"]
 [ext_resource type="Script" uid="uid://b8xw6jtof2mjm" path="res://Escenas/ratachef1.gd" id="3_6ovu5"]
 [ext_resource type="PackedScene" uid="uid://dt0jx5celyxm8" path="res://next_button.tscn" id="4_porbi"]
+[ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="5_w5qi4"]
+
+[sub_resource type="Animation" id="Animation_6ovu5"]
+resource_name = "pene2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackBackground1468370534d5s:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gvatk"]
+_data = {
+&"pene2": SubResource("Animation_6ovu5")
+}
 
 [node name="Node2D" type="Node2D"]
 
 [node name="fondo" type="Sprite2D" parent="."]
-position = Vector2(640, 361.00003)
-scale = Vector2(0.21342081, 0.19995092)
-texture = ExtResource("1_yuv8m")
+modulate = Color(0.6156863, 0.78039217, 0.84705883, 1)
+position = Vector2(640, 360)
+scale = Vector2(0.2132845, 0.19995083)
+texture = ExtResource("1_w5qi4")
 
 [node name="Player_rat" parent="." instance=ExtResource("2_porbi")]
-position = Vector2(0, 1.9999999)
+modulate = Color(0.45490196, 0.5568628, 0.6784314, 1)
+position = Vector2(0, 2)
 scale = Vector2(1.013, 1)
 script = ExtResource("3_6ovu5")
 
 [node name="NextButton" parent="Player_rat" instance=ExtResource("4_porbi")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_gvatk")
+}
+autoplay = "pene2"
+
+[node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(688, 420)
+texture = ExtResource("5_w5qi4")

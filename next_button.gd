@@ -8,6 +8,7 @@ var scenes = [
     "res://Escenas/fondoescena3.tscn",
     "res://Escenas/escena5.tscn",
     "res://escena6.tscn",
+    "res://final_alternativo.tscn",
 ]
 
 # Guardamos en qué escena estamos

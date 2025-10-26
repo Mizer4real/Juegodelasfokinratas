@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs4mpn2cl0qe7"]
+
+[ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="1_nm7a0"]
+[ext_resource type="Script" uid="uid://bxn0fekat2pff" path="res://pene5.gd" id="2_p8awi"]
+[ext_resource type="FontFile" uid="uid://bhe0md5wbxb2h" path="res://Jersey_10_fuentedetexto/Jersey10-Regular.ttf" id="3_7i6g0"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
+position = Vector2(740, 351)
+texture = ExtResource("1_nm7a0")
+script = ExtResource("2_p8awi")
+
+[node name="Label" type="Label" parent="BlackBackground1468370534d5s"]
+offset_left = -461.0
+offset_top = -144.0
+offset_right = 1.0
+offset_bottom = 30.0
+scale = Vector2(1.9066046, 1.7666116)
+theme_override_fonts/font = ExtResource("3_7i6g0")
+theme_override_font_sizes/font_size = 39
+text = "         gracias por jugar:3
+ (   sabemos que no es el 
+mejor pero lo intentamos  )"

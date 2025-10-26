@@ -165,7 +165,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("../main/iniciar_juego:modulate")
+tracks/5/path = NodePath("../iniciar_juego:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -298,7 +298,7 @@ metadata/_edit_lock_ = true
 
 [node name="ShineFreePng" type="Sprite2D" parent="."]
 modulate = Color(1, 0.95774204, 0.9133184, 1)
-position = Vector2(18, -611)
+position = Vector2(18, -130.9964)
 texture = ExtResource("2_htw3k")
 
 [node name="318SinTítulo20250919174240" type="Sprite2D" parent="."]
@@ -382,29 +382,6 @@ layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 
-[node name="iniciar_juego" type="TextureButton" parent="main"]
-modulate = Color(1, 0.95686275, 0.9137255, 0)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -199.0
-offset_top = -3.0
-offset_right = 1721.0
-offset_bottom = 1077.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.22916135, 0.2556341)
-texture_normal = ExtResource("4_xagyt")
-texture_pressed = ExtResource("5_hpmgr")
-texture_hover = ExtResource("4_x8a4r")
-metadata/_edit_lock_ = true
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="main/iniciar_juego"]
-stream = ExtResource("16_47erp")
-
 [node name="opciones" type="TextureButton" parent="main"]
 modulate = Color(1, 0.95686275, 0.9137255, 1)
 layout_mode = 1
@@ -451,6 +428,30 @@ metadata/_edit_lock_ = true
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="main/cerrar_juego"]
 stream = ExtResource("16_47erp")
 
+[node name="iniciar_juego" type="TextureButton" parent="."]
+modulate = Color(1, 0.95686275, 0.9137255, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -19.0
+offset_right = 1705.0
+offset_bottom = 1061.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.22916135, 0.2556341)
+texture_normal = ExtResource("4_xagyt")
+texture_pressed = ExtResource("5_hpmgr")
+texture_hover = ExtResource("4_x8a4r")
+stretch_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="iniciar_juego"]
+stream = ExtResource("16_47erp")
+
 [node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
 position = Vector2(42, 14)
 scale = Vector2(0.7474284, 0.64979744)
@@ -463,6 +464,6 @@ libraries = {
 autoplay = "fade_out"
 
 [connection signal="pressed" from="pene/Label/atraaass" to="." method="_on_atraaass_pressed"]
-[connection signal="pressed" from="main/iniciar_juego" to="." method="_on_iniciar_juego_pressed"]
 [connection signal="pressed" from="main/opciones" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="main/cerrar_juego" to="." method="_on_cerrar_juego_pressed"]
+[connection signal="pressed" from="iniciar_juego" to="." method="_on_iniciar_juego_pressed"]

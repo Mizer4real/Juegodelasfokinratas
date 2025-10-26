@@ -86,7 +86,7 @@ _data = {
 script = ExtResource("1_m06ph")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.48102534, 0.6720791, 0.93324447, 1)
+modulate = Color(0.5324466, 0.7038921, 0.9435257, 1)
 position = Vector2(640.554, 363.6782)
 scale = Vector2(0.59410584, 0.4953135)
 texture = ExtResource("1_b7ldk")
@@ -103,6 +103,7 @@ script = ExtResource("3_0enja")
 metadata/_edit_group_ = true
 
 [node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(641.00006, 357.5)
 scale = Vector2(0.69166666, 0.5914062)
 texture = ExtResource("2_fndph")
