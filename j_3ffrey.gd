@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+var nearby_object: Area2D = null 
 const SPEED = 250.0
 const JUMP_VELOCITY = -400.0
 var facing_direction = "side" # "side" o "front"
@@ -51,5 +52,9 @@ func _physics_process(delta: float) -> void:
         animated_sprite_2d.flip_h =false
     elif direction == -1:
         animated_sprite_2d.flip_h =true
+    if Input.is_action_just_pressed("interact") and nearby_object:
+        if nearby_object.has_method("interact"):
+            nearby_object.interact()
+        
         
         

@@ -1,7 +1,8 @@
-[gd_scene load_steps=35 format=3 uid="uid://cqlajke3l0dux"]
+[gd_scene load_steps=38 format=3 uid="uid://cqlajke3l0dux"]
 
 [ext_resource type="Texture2D" uid="uid://1323cw31ko27" path="res://329 sin título_20251025134228.PNG" id="1_ptikf"]
 [ext_resource type="Script" uid="uid://mbla1cjgmio4" path="res://j_3ffrey.gd" id="2_ih1lc"]
+[ext_resource type="Script" uid="uid://ckkaj42s8gm4a" path="res://area_2d.gd" id="3_4c11n"]
 [ext_resource type="Texture2D" uid="uid://bg35oieg6wiir" path="res://339 sin título_20251021221710.PNG" id="3_ih1lc"]
 [ext_resource type="Texture2D" uid="uid://d0dtesxc6eqgy" path="res://339 sin título_20251021221712.PNG" id="4_o67f3"]
 [ext_resource type="Texture2D" uid="uid://b4swy7k4cfxkk" path="res://340 sin título_Restaurado_20251022091939 2.PNG" id="4_ptikf"]
@@ -27,9 +28,26 @@
 [ext_resource type="Texture2D" uid="uid://bdwntvvqr6knj" path="res://337 sin título_20251021181442.PNG" id="18_j1l7p"]
 [ext_resource type="Texture2D" uid="uid://b6js2ibib3an4" path="res://337 sin título_20251021181444.PNG" id="19_wuv2y"]
 [ext_resource type="Texture2D" uid="uid://bn6j4hpqrgf1b" path="res://337 sin título_20251021181446.PNG" id="20_4iqmy"]
+[ext_resource type="Texture2D" uid="uid://dm70m8owgk7gu" path="res://329 sin título_20251025195640.PNG" id="28_xru3o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rcdd3"]
 size = Vector2(2679, 34.25)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ptikf"]
+a = Vector2(-709, -173)
+b = Vector2(-595, -265)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c11n"]
+size = Vector2(445, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptikf"]
+size = Vector2(202, 108)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xru3o"]
+size = Vector2(125, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3tmio"]
+size = Vector2(197.52942, 319.09076)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lfyjl"]
 animations = [{
@@ -154,19 +172,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mt5rx"]
 size = Vector2(176.63506, 433.85406)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptikf"]
-size = Vector2(202, 108)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xru3o"]
-size = Vector2(125, 40)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_ptikf"]
-a = Vector2(-709, -173)
-b = Vector2(-595, -265)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c11n"]
-size = Vector2(445, 7)
-
 [node name="Node2D" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -183,20 +188,53 @@ metadata/_edit_lock_ = true
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+modulate = Color(0.9539346, 0.95112973, 0.94828516, 1)
 position = Vector2(1181, 311)
 scale = Vector2(0.3371993, 0.36676535)
 texture = ExtResource("1_ptikf")
 metadata/_edit_lock_ = true
 
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(2121, 653)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("SegmentShape2D_ptikf")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-369.5, -261.5)
+shape = SubResource("RectangleShape2D_4c11n")
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2/Area2D"]
+position = Vector2(27, 5)
+shape = SubResource("RectangleShape2D_ptikf")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2/Area2D"]
+position = Vector2(-124.5, 39)
+shape = SubResource("RectangleShape2D_xru3o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1183, 310)
+scale = Vector2(0.33761048, 0.36666667)
+texture = ExtResource("28_xru3o")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+script = ExtResource("3_4c11n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(-2497.9795, 814.09125)
+scale = Vector2(1, 1.0000007)
+shape = SubResource("RectangleShape2D_3tmio")
+
 [node name="J3FFREY" type="CharacterBody2D" parent="."]
-position = Vector2(530, 616)
+position = Vector2(796, 616.00006)
 scale = Vector2(0.37931278, 0.3741228)
 script = ExtResource("2_ih1lc")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="J3FFREY"]
 texture_filter = 1
-position = Vector2(-1053.529, -10.701118)
+position = Vector2(-1057.1749, -0.00014209747)
 scale = Vector2(0.93604326, 0.90208095)
 sprite_frames = SubResource("SpriteFrames_lfyjl")
 animation = &"idle"
@@ -208,23 +246,5 @@ shape = SubResource("RectangleShape2D_mt5rx")
 debug_color = Color(0.94981796, 1.0588765e-06, 0.57402766, 0.41960785)
 
 [node name="Camera2D" type="Camera2D" parent="J3FFREY"]
-position = Vector2(284.72543, -686.9402)
+position = Vector2(-405.99734, -676.24884)
 scale = Vector2(0.24840175, -1.4319777)
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(2121, 653)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(27, 5)
-shape = SubResource("RectangleShape2D_ptikf")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-124.5, 39)
-shape = SubResource("RectangleShape2D_xru3o")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D2"]
-shape = SubResource("SegmentShape2D_ptikf")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-369.5, -261.5)
-shape = SubResource("RectangleShape2D_4c11n")
