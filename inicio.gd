@@ -32,3 +32,11 @@ func _on_opciones_pressed() -> void:
 func _on_atraaass_pressed() -> void:
     _ready()
     audio_stream_player_2d.playing = true
+
+@onready var audio_stream_p_layer_2d: AudioStreamPlayer2D = $AudioStreamPLayer2D
+    
+
+func _on_audio_stream_player_2d_ready() -> void:
+     var audio = load("res://JAZZ RATV2_2.wav")
+     audio_stream_p_layer_2d.stream = audio
+     audio_stream_p_layer_2d.play()
