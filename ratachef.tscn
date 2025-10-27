@@ -1,40 +1,27 @@
-[gd_scene load_steps=7 format=3 uid="uid://icjjc8y1mnnj"]
+[gd_scene load_steps=5 format=3 uid="uid://icjjc8y1mnnj"]
 
-[ext_resource type="Script" uid="uid://ce36qwjb36j87" path="res://Escenas/ratachef2.gd" id="1_gdyxr"]
-[ext_resource type="Texture2D" uid="uid://dapwpsd5tygw0" path="res://Animaciones/whatchef.png" id="2_qx6cd"]
-[ext_resource type="Texture2D" uid="uid://cudrfx2j54181" path="res://Animaciones/seriouschef.png" id="3_0vly5"]
-[ext_resource type="Texture2D" uid="uid://bfq5x8mm6doh5" path="res://Animaciones/hmmchef.png" id="4_uq51t"]
-[ext_resource type="Texture2D" uid="uid://bmugfcncl3ec4" path="res://Animaciones/DAYUMMcheft.png" id="5_54kwm"]
-[ext_resource type="Texture2D" uid="uid://dgm5f0i1oprkj" path="res://Animaciones/mmhhhchef.png" id="6_e8m5b"]
+[ext_resource type="Texture2D" uid="uid://dpjaghupcd21v" path="res://addons/happypene1.png" id="1_acwlt"]
+[ext_resource type="Texture2D" uid="uid://b0l5blkdwjlbn" path="res://addons/seriopene.png" id="2_0xdm1"]
+[ext_resource type="Texture2D" uid="uid://by6v0qscsjyuv" path="res://addons/neutralpene.png" id="3_gdyxr"]
+[ext_resource type="Texture2D" uid="uid://67rhf4ackmru" path="res://addons/bicepspene2.png" id="4_qx6cd"]
 
 [node name="Player_rat" type="Node2D"]
-script = ExtResource("1_gdyxr")
 
-[node name="angry" type="Sprite2D" parent="."]
+[node name="happypene" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(627, 477)
-scale = Vector2(1.5229502, 1.422746)
-texture = ExtResource("2_qx6cd")
+position = Vector2(612, 411)
+texture = ExtResource("1_acwlt")
 
-[node name="serius" type="Sprite2D" parent="."]
+[node name="seriopene" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(627, 477.00003)
-scale = Vector2(1.7856051, 1.6554542)
-texture = ExtResource("3_0vly5")
+position = Vector2(612, 411)
+texture = ExtResource("2_0xdm1")
 
-[node name="yeah" type="Sprite2D" parent="."]
+[node name="neutralpene" type="Sprite2D" parent="."]
+position = Vector2(612, 411)
+texture = ExtResource("3_gdyxr")
+
+[node name="bicepspene" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(627, 477)
-scale = Vector2(1.5252095, 1.4108452)
-texture = ExtResource("4_uq51t")
-
-[node name="biceps" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(627, 477)
-scale = Vector2(1.5018502, 1.4079756)
-texture = ExtResource("5_54kwm")
-
-[node name="what" type="Sprite2D" parent="."]
-position = Vector2(627, 477)
-scale = Vector2(1.5503831, 1.4097666)
-texture = ExtResource("6_e8m5b")
+position = Vector2(612, 411)
+texture = ExtResource("4_qx6cd")

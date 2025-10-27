@@ -13,7 +13,6 @@ var jump_speed = 620
 var colliding_ladder = false
 var going_up = false
 
-var facing_direction = "side" # "side" o "front"
 func update_animations():
     if velocity.x:
         animated_sprite_2d.play("walking")
@@ -52,6 +51,17 @@ func _physics_process(_delta):
     if not is_on_floor():    
         velocity += get_gravity() * _delta
     
+func jump():
+    if is_on_floor():
+        if Input.is_action_just_pressed("ui_accept"):
+            velocity.y -= jump_speed
+            
+    if !is_on_floor():
+        if velocity.y < -1:
+            animated_sprite_2d.play("jump")
+        if velocity.y > 1:
+            animated_sprite_2d.play("fall")
+    
 func _movement(delta):
     if not is_on_floor():
         velocity += get_gravity() * delta
@@ -86,11 +96,15 @@ func climb():
         if Input.is_action_pressed("ui_up"):
             going_up = true
             velocity.y = max(velocity.y - acceleration, -max_speed)
-            $AnimatedSprite2D.play("climb")
+            animated_sprite_2d.play("climb")
         elif Input.is_action_pressed("ui_down"):
             going_up = true
             velocity.y = min(velocity.y + acceleration, max_speed)
             animated_sprite_2d.play("climb_down")
+        else:
+            if going_up:
+                velocity.y = 0
+                animated_sprite_2d.play("idle")
             
             
 func _on_area_2d_area_exited(area: Area2D) -> void:

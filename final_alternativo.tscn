@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://citlh8m80q57"]
+
+[ext_resource type="Texture2D" uid="uid://w0ax7tvve3wo" path="res://326 sin título_20251008135820.PNG" id="1_5iw4p"]
+[ext_resource type="Script" uid="uid://xm3g3kscne4j" path="res://final_alternativo.gd" id="1_s3ix6"]
+[ext_resource type="Texture2D" uid="uid://b4psqfyc1mvi4" path="res://IMG_7187.JPG" id="2_s3ix6"]
+
+[sub_resource type="Animation" id="Animation_dfn4e"]
+resource_name = "pene3"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.40000004, 0.43333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_tbp1k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ou3d3"]
+_data = {
+&"RESET": SubResource("Animation_tbp1k"),
+&"pene3": SubResource("Animation_dfn4e")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_s3ix6")
+
+[node name="326SinTítulo20251008135820" type="Sprite2D" parent="."]
+position = Vector2(642, 356.00003)
+scale = Vector2(0.6781992, 0.6859472)
+texture = ExtResource("1_5iw4p")
+
+[node name="Img7187" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(608, 363.00003)
+scale = Vector2(1, 0.93913364)
+texture = ExtResource("2_s3ix6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Img7187"]
+libraries = {
+&"": SubResource("AnimationLibrary_ou3d3")
+}
+autoplay = "pene3"
+
+[connection signal="animation_finished" from="Img7187/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
