@@ -10,6 +10,7 @@
 script = ExtResource("1_bya2k")
 
 [node name="happypene" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(612, 411)
 texture = ExtResource("2_l15ns")
 
@@ -19,7 +20,6 @@ position = Vector2(612, 411)
 texture = ExtResource("3_bya2k")
 
 [node name="neutralpene" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(612, 411)
 texture = ExtResource("4_exsqj")
 

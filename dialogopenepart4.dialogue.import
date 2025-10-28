@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dcsgerorcwx5o"
+path="res://.godot/imported/dialogopenepart4.dialogue-14ec8da6588c1775a3a08eb4cc35957d.tres"
+
+[deps]
+
+source_file="res://dialogopenepart4.dialogue"
+dest_files=["res://.godot/imported/dialogopenepart4.dialogue-14ec8da6588c1775a3a08eb4cc35957d.tres"]
+
+[params]
+
+defaults=true

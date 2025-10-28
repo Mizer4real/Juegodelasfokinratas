@@ -27,16 +27,15 @@ _data = {
 &"pene2": SubResource("Animation_6ovu5")
 }
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="fondo" type="Sprite2D" parent="."]
-modulate = Color(0.6156863, 0.78039217, 0.84705883, 1)
 position = Vector2(640, 360)
 scale = Vector2(0.2132845, 0.19995083)
 texture = ExtResource("1_w5qi4")
 
 [node name="Player_rat" parent="." instance=ExtResource("2_porbi")]
-modulate = Color(0.45490196, 0.5568628, 0.6784314, 1)
+modulate = Color(0.7764706, 0.75686276, 0.73333335, 1)
 position = Vector2(0, 2)
 scale = Vector2(1.013, 1)
 script = ExtResource("3_6ovu5")

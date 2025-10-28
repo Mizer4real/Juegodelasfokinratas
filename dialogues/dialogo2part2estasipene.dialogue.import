@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://di5ry7bbywku0"
+path="res://.godot/imported/dialogo2part2estasipene.dialogue-86dcaed3d7c3d7e667786242a7599586.tres"
+
+[deps]
+
+source_file="res://dialogues/dialogo2part2estasipene.dialogue"
+dest_files=["res://.godot/imported/dialogo2part2estasipene.dialogue-86dcaed3d7c3d7e667786242a7599586.tres"]
+
+[params]
+
+defaults=true

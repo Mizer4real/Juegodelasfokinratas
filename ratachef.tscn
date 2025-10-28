@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://icjjc8y1mnnj"]
+[gd_scene load_steps=6 format=3 uid="uid://icjjc8y1mnnj"]
 
 [ext_resource type="Texture2D" uid="uid://dpjaghupcd21v" path="res://addons/happypene1.png" id="1_acwlt"]
 [ext_resource type="Texture2D" uid="uid://b0l5blkdwjlbn" path="res://addons/seriopene.png" id="2_0xdm1"]
 [ext_resource type="Texture2D" uid="uid://by6v0qscsjyuv" path="res://addons/neutralpene.png" id="3_gdyxr"]
 [ext_resource type="Texture2D" uid="uid://67rhf4ackmru" path="res://addons/bicepspene2.png" id="4_qx6cd"]
+[ext_resource type="Texture2D" uid="uid://cr0isaulu0jtf" path="res://Animaciones/speakingchefrat.png" id="5_0xdm1"]
 
-[node name="Player_rat" type="Node2D"]
+[node name="Player_rat2" type="Node2D"]
 
 [node name="happypene" type="Sprite2D" parent="."]
 visible = false
@@ -18,6 +19,7 @@ position = Vector2(612, 411)
 texture = ExtResource("2_0xdm1")
 
 [node name="neutralpene" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(612, 411)
 texture = ExtResource("3_gdyxr")
 
@@ -25,3 +27,7 @@ texture = ExtResource("3_gdyxr")
 visible = false
 position = Vector2(612, 411)
 texture = ExtResource("4_qx6cd")
+
+[node name="Speakingchefrat" type="Sprite2D" parent="."]
+position = Vector2(612, 411)
+texture = ExtResource("5_0xdm1")

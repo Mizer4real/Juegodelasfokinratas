@@ -13,7 +13,7 @@ func interact():
     animated_sprite_2d.play("rolling")
     animation_player.play("fade_out")
     await animated_sprite_2d.animation_finished
-    get_tree(). change_scene_to_file("res://pene5munismo.tscn")
+    get_tree(). change_scene_to_file("res://escena_4bienhecha.tscn")
     
 
 func _on_body_entered(body: Node2D) -> void:

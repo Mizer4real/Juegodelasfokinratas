@@ -1,0 +1,167 @@
+[gd_scene load_steps=29 format=3 uid="uid://c6a6bncmjmy4d"]
+
+[ext_resource type="Texture2D" uid="uid://bvvxuy2vr2kki" path="res://sprites_walk/jeffrysaltando1.png" id="1_qxw2y"]
+[ext_resource type="Texture2D" uid="uid://b51lopk8qovos" path="res://sprites_walk/jeffrysaltando2.png" id="2_7ax0i"]
+[ext_resource type="Texture2D" uid="uid://c7lgb3tkq2eji" path="res://sprites_walk/jeffrysaltando3.png" id="3_t31gy"]
+[ext_resource type="Texture2D" uid="uid://m6qu4nllh5j4" path="res://sprites_walk/jeffrysaltando4.png" id="4_t2ax4"]
+[ext_resource type="Texture2D" uid="uid://bwc45lwhinroh" path="res://sprites_walk/jeffrysaltando5.png" id="5_t3x0g"]
+[ext_resource type="Texture2D" uid="uid://gi4nix1sd7h" path="res://sprites_walk/jeffrysaltando6.png" id="6_slace"]
+[ext_resource type="Texture2D" uid="uid://ckpmud4jmxhbd" path="res://sprites_walk/jeffrysaltando7.png" id="7_3y3dp"]
+[ext_resource type="Texture2D" uid="uid://bktgpamh4q3q0" path="res://sprites_walk/jeffrysaltando8.png" id="8_g3xwr"]
+[ext_resource type="Texture2D" uid="uid://bjayooa5b5j3r" path="res://sprites_walk/jeffrysaltando9.png" id="9_sfw3x"]
+[ext_resource type="Texture2D" uid="uid://7ftl1qkgb2ba" path="res://sprites_walk/jeffrysaltando10.png" id="10_jb1mu"]
+[ext_resource type="Texture2D" uid="uid://wj0a6qjyme1y" path="res://sprites_walk/jeffrysaltando11.png" id="11_1qnds"]
+[ext_resource type="Texture2D" uid="uid://cnxcmq8fi2tav" path="res://sprites_walk/jeffrysaltando12.png" id="12_sxl0f"]
+[ext_resource type="Texture2D" uid="uid://ccxq8kvueqoh" path="res://sprites_walk/jeffrysaltando13.png" id="13_miwnr"]
+[ext_resource type="Texture2D" uid="uid://bjysr0gi76uww" path="res://sprites_walk/jeffrysaltando14.png" id="14_5cbbm"]
+[ext_resource type="Texture2D" uid="uid://brbenq51rmjd1" path="res://sprites_walk/jeffrysaltando15.png" id="15_1h7wq"]
+[ext_resource type="Texture2D" uid="uid://b7t6rpi6105qx" path="res://sprites_walk/jeffrysaltando16.png" id="16_gkysk"]
+[ext_resource type="Texture2D" uid="uid://bixmbn8e7ctmi" path="res://sprites_walk/jeffrysaltando17.png" id="17_45fme"]
+[ext_resource type="Texture2D" uid="uid://d2aikfb7d3y4r" path="res://sprites_walk/jeffrysaltando18.png" id="18_ayphc"]
+[ext_resource type="Texture2D" uid="uid://co8japtb1aa6h" path="res://sprites_walk/jeffrysaltando19.png" id="19_ftj2h"]
+[ext_resource type="Texture2D" uid="uid://r1yltistshtd" path="res://sprites_walk/jeffrysaltando20.png" id="20_pkvgs"]
+[ext_resource type="Texture2D" uid="uid://ca4hrqryly84a" path="res://sprites_walk/jeffrysaltando21.png" id="21_0ipv3"]
+[ext_resource type="Script" uid="uid://b6xj3ie2oq36u" path="res://animado_ratapene.gd" id="22_7ax0i"]
+[ext_resource type="Texture2D" uid="uid://dw503ijgqsxbe" path="res://sprites_walk/jeffrysaltando22.png" id="22_t31gy"]
+[ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="24_t2ax4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x5avy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qxw2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7ax0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_t31gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t2ax4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_t3x0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_slace")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3y3dp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_g3xwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_sfw3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jb1mu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1qnds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_sxl0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_miwnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5cbbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1h7wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gkysk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_45fme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ayphc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ftj2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_pkvgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_0ipv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_t31gy")
+}],
+"loop": false,
+"name": &"animacion_eldiablo1",
+"speed": 22.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_xagyt"]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.06666667, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_x8a4r"]
+resource_name = "fade-out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.12941177, 0.14901961, 0.18039216, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hpmgr"]
+_data = {
+&"RESET": SubResource("Animation_xagyt"),
+&"fade-out": SubResource("Animation_x8a4r")
+}
+
+[node name="AnimatedSprite2D" type="Node2D"]
+
+[node name="QUIERESPENE" type="AnimatedSprite2D" parent="."]
+position = Vector2(640.00006, 360)
+scale = Vector2(0.79956996, 0.7202482)
+sprite_frames = SubResource("SpriteFrames_x5avy")
+animation = &"animacion_eldiablo1"
+autoplay = "animacion_eldiablo1"
+frame = 21
+frame_progress = 1.0
+script = ExtResource("22_7ax0i")
+
+[node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
+position = Vector2(641.00006, 357.5)
+scale = Vector2(0.69166666, 0.5914062)
+texture = ExtResource("24_t2ax4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BlackBackground1468370534d5s"]
+libraries = {
+&"": SubResource("AnimationLibrary_hpmgr")
+}
+autoplay = "RESET"
+speed_scale = 0.575
+movie_quit_on_finish = true

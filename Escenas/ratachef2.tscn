@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dktl1rb1gbs0h"]
+[gd_scene load_steps=7 format=3 uid="uid://dktl1rb1gbs0h"]
 
 [ext_resource type="Script" uid="uid://skk6a1rxyref" path="res://Escenas/ratachef.gd" id="1_51cb6"]
 [ext_resource type="Texture2D" uid="uid://dpjaghupcd21v" path="res://addons/happypene1.png" id="2_jw37w"]
 [ext_resource type="Texture2D" uid="uid://b0l5blkdwjlbn" path="res://addons/seriopene.png" id="3_d87cn"]
 [ext_resource type="Texture2D" uid="uid://by6v0qscsjyuv" path="res://addons/neutralpene.png" id="4_a8unf"]
 [ext_resource type="Texture2D" uid="uid://67rhf4ackmru" path="res://addons/bicepspene2.png" id="5_chu0t"]
+[ext_resource type="Texture2D" uid="uid://dtv4pnnc47tvk" path="res://Animaciones/arguingratchef2.png" id="6_d87cn"]
 
 [node name="Player_rat" type="Node2D"]
 script = ExtResource("1_51cb6")
@@ -15,6 +16,7 @@ position = Vector2(612, 411)
 texture = ExtResource("2_jw37w")
 
 [node name="seriopene" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(612, 411)
 texture = ExtResource("3_d87cn")
 
@@ -27,3 +29,7 @@ texture = ExtResource("4_a8unf")
 visible = false
 position = Vector2(612, 411)
 texture = ExtResource("5_chu0t")
+
+[node name="enojadoxd" type="Sprite2D" parent="."]
+position = Vector2(612, 411)
+texture = ExtResource("6_d87cn")

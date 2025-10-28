@@ -8,6 +8,9 @@ var scenes = [
     "res://Escenas/fondoescena3.tscn",
     "res://Escenas/escena5.tscn",
     "res://escena6.tscn",
+    "res://escena_7.tscn",
+    "res://escena8XD.tscn",
+    "res://eldiablo1.tscn",
     "res://final_alternativo.tscn",
 ]
 

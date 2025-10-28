@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8wovawnoy7qu"]
+
+[ext_resource type="Texture2D" uid="uid://7l1b4bu2ybw6" path="res://Animaciones/322 sin título_20251022223248 (1).PNG" id="1_udaso"]
+[ext_resource type="PackedScene" uid="uid://2sbu8r6vc61r" path="res://porlamierda.tscn" id="2_udaso"]
+[ext_resource type="Script" uid="uid://dw1i5gay1utqv" path="res://Animaciones/ratachef_holapene4.gd" id="3_pxbcx"]
+[ext_resource type="PackedScene" uid="uid://dt0jx5celyxm8" path="res://next_button.tscn" id="4_ssd1c"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.21293877, 0.1997991)
+texture = ExtResource("1_udaso")
+
+[node name="Player" parent="." instance=ExtResource("2_udaso")]
+script = ExtResource("3_pxbcx")
+
+[node name="NextButton" parent="Player" instance=ExtResource("4_ssd1c")]
