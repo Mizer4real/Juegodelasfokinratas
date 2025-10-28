@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cpj6bnmrsu6d2"
+path="res://.godot/imported/dialogo8pene.dialogue-c92109d39284781797b96ab9fec9b727.tres"
+
+[deps]
+
+source_file="res://dialogo8pene.dialogue"
+dest_files=["res://.godot/imported/dialogo8pene.dialogue-c92109d39284781797b96ab9fec9b727.tres"]
+
+[params]
+
+defaults=true

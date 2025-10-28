@@ -1,5 +1,117 @@
 ~ start
-Rata Chef(Carletto): Gracias por la mano, amico.
-Rata Chef(Carletto): Si algún día necesitas un poco de sugo o una bruschetta...
-Rata Chef(Carletto): Ya sabes dónde encontrarme.
+Jeffrey: [speed=0.5]Mhmm...
+- 4x25²
+	Rata Chef(Carletto): [speed=0.5] Esa fórmula parece para un cubo, ¿Seguro?
+	=> start
+- 6x25²
+	Rata Chef(Carletto): [speed=0.5] También es para un cubo, no va.
+	=> start
+- 2π⋅r⋅(h+r)
+	Rata Chef(Carletto): [speed=0.5]¡Exacto! Esta es la correcta, guarda:[speed=0.1] 2π⋅20⋅(80+20),[speed=0.5] entonces Jeffrey...[speed=0.3]si reemplazamos los valores con las medidas que me diste esto sería...
+	Rata Chef(Carletto): [speed=0.5]¡Dejame pensar un poco! Sono cuoco, non matematico!
+	Rata Chef(Carletto): [speed=0.3]Luego de arduos cálculos, he llegado a la conclusión de...[speed=0.1]2π⋅20⋅100 = 12,566.37cm²
+	Jeffrey: [speed=0.5]Lo has hecho perfecto, tu y está lata están destinados a estar juntos!
 => END
+
+
+
+
+
+
+
+
+
+
++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

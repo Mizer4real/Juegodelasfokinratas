@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6s3186nc4wih"]
+
+[ext_resource type="Texture2D" uid="uid://dpjaghupcd21v" path="res://addons/happypene1.png" id="1_myn56"]
+[ext_resource type="Texture2D" uid="uid://b0l5blkdwjlbn" path="res://addons/seriopene.png" id="2_t6iql"]
+[ext_resource type="Texture2D" uid="uid://by6v0qscsjyuv" path="res://addons/neutralpene.png" id="3_3bu0i"]
+[ext_resource type="Texture2D" uid="uid://67rhf4ackmru" path="res://addons/bicepspene2.png" id="4_fph5u"]
+
+[node name="player" type="Node2D"]
+
+[node name="happypene" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(612, 411)
+texture = ExtResource("1_myn56")
+
+[node name="seriopene" type="Sprite2D" parent="."]
+position = Vector2(612, 411)
+texture = ExtResource("2_t6iql")
+
+[node name="neutralpene" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(612, 411)
+texture = ExtResource("3_3bu0i")
+
+[node name="bicepspene" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(612, 411)
+texture = ExtResource("4_fph5u")

@@ -1,31 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://8tpvgsaspd6e"]
+[gd_scene load_steps=5 format=3 uid="uid://8tpvgsaspd6e"]
 
 [ext_resource type="Texture2D" uid="uid://dtynnutm21s8t" path="res://addons/322 sin título_20251022223248.PNG" id="1_yni0b"]
 [ext_resource type="PackedScene" uid="uid://icjjc8y1mnnj" path="res://ratachef.tscn" id="2_x4top"]
 [ext_resource type="PackedScene" uid="uid://dt0jx5celyxm8" path="res://next_button.tscn" id="3_w22lv"]
 [ext_resource type="Script" uid="uid://ce36qwjb36j87" path="res://Escenas/ratachef2.gd" id="3_yni0b"]
-[ext_resource type="Texture2D" uid="uid://boniw6kdh75np" path="res://325 sin título_20251007200539.PNG" id="4_xqde6"]
-[ext_resource type="Script" uid="uid://byne135rd2ajk" path="res://Escenas/latadebeans.gd" id="5_yni0b"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Fondo" type="Sprite2D" parent="."]
-modulate = Color(0.61506987, 0.78084224, 0.8459229, 1)
 position = Vector2(640, 360)
 scale = Vector2(0.213, 0.2)
 texture = ExtResource("1_yni0b")
 
 [node name="Player_rat" parent="." instance=ExtResource("2_x4top")]
-modulate = Color(0.45588022, 0.558452, 0.6764806, 1)
+modulate = Color(0.79803836, 0.7813647, 0.75803524, 1)
 position = Vector2(0, 2)
 scale = Vector2(1.013, 1)
 script = ExtResource("3_yni0b")
 
 [node name="NextButton" parent="Player_rat" instance=ExtResource("3_w22lv")]
-
-[node name="lata_pene" type="Sprite2D" parent="."]
-modulate = Color(0.5797381, 0.67117876, 0.7807148, 1)
-position = Vector2(230.99997, 225.00002)
-scale = Vector2(0.22002405, 0.1921547)
-texture = ExtResource("4_xqde6")
-script = ExtResource("5_yni0b")

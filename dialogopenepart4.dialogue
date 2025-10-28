@@ -1,0 +1,11 @@
+~ start
+Rata Chef(Carletto):  Mmm...suena bene, pero antes necesito estar seguro.
+Rata Chef(Carletto): Ayúdame con los cálculos, no vaya a ser que monte el horno y se me hunda la base
+Rata Chef(Carletto): ¿Sabemos cómo hacerlo verdad?
+- Eh...sí, claro.
+	Rata Chef(Carletto): Allora, comencemos...el cilindro mide 40 cm de diámetro y 80 de alto. ¿Me dices cuánto volumen tiene?
+- Supongo que sí, no creo que sea tan difícil.
+	Rata Chef(Carletto): Allora, comencemos...el cilindro mide 40 cm de diámetro y 80 de alto. ¿Me dices cuánto volumen tiene?
+- ¡Por supuesto! lo se todo sobre estas casas.
+	Rata Chef(Carletto): Allora, comencemos...el cilindro mide 40 cm de diámetro y 80 de alto. ¿Me dices cuánto volumen tiene?
+=> END

@@ -7,19 +7,17 @@
 [sub_resource type="GDScript" id="GDScript_f3qpr"]
 script/source = "extends Node2D
 
-
-
-const MYDIALOGUE_6 = preload(\"res://dialogo6.dialogue\") 
+const MYDIALOGUE_6 = preload(\"res://dialogo6.dialogue\")
+const MYDIALOGUE_61 = preload(\"res://dialogo6_1.dialogue\")
+ 
 
 func _ready():
     DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
-    DialogueManager.show_dialogue_balloon(MYDIALOGUE_6, \"start\")
-    
+    DialogueManager.show_dialogue_balloon(MYDIALOGUE_61, \"start\")
+   
 func _on_dialogue_ended(resource):
-    if resource == MYDIALOGUE_6:
-        var rata = $biceps
-        var tween = create_tween()
-        tween.tween_property(rata, \"modulate:a\", 0.0, 2.0)
+    if resource == MYDIALOGUE_61:
+        DialogueManager.show_dialogue_balloon(MYDIALOGUE_6, \"start\")
 
     
 
@@ -60,13 +58,12 @@ func _on_dialogue_ended(resource):
 [node name="main" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.73333335, 0.8509804, 0.9019608, 1)
 position = Vector2(640, 360)
 scale = Vector2(0.213, 0.2)
 texture = ExtResource("1_fimh0")
 
 [node name="Player_rat" parent="." instance=ExtResource("2_fimh0")]
-modulate = Color(0.7199559, 0.7858656, 0.8657729, 1)
+modulate = Color(0.7764706, 0.75686276, 0.73333335, 1)
 position = Vector2(0, 2)
 scale = Vector2(1.013, 1)
 script = SubResource("GDScript_f3qpr")
