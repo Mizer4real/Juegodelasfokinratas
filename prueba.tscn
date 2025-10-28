@@ -1,8 +1,6 @@
-[gd_scene load_steps=61 format=3 uid="uid://cqlajke3l0dux"]
+[gd_scene load_steps=74 format=3 uid="uid://cqlajke3l0dux"]
 
 [ext_resource type="Texture2D" uid="uid://ckwy2jxa6hv5a" path="res://329 sin título_20251026163958.PNG" id="1_dfjso"]
-[ext_resource type="Texture2D" uid="uid://1323cw31ko27" path="res://329 sin título_20251025134228.PNG" id="1_ptikf"]
-[ext_resource type="Script" uid="uid://mbla1cjgmio4" path="res://j_3ffrey.gd" id="2_ih1lc"]
 [ext_resource type="Script" uid="uid://ckkaj42s8gm4a" path="res://area_2d.gd" id="3_4c11n"]
 [ext_resource type="Texture2D" uid="uid://drp2mwjqn5q6s" path="res://329 sin título_20251026163244.PNG" id="3_63o1a"]
 [ext_resource type="Texture2D" uid="uid://bg35oieg6wiir" path="res://339 sin título_20251021221710.PNG" id="3_ih1lc"]
@@ -32,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://beyccsf5oi1fq" path="res://337 sin título_20251021181432.PNG" id="13_3tmio"]
 [ext_resource type="Texture2D" uid="uid://bb2m8gn1yilhi" path="res://340 sin título_Restaurado3_20251025140324.PNG" id="13_caauc"]
 [ext_resource type="Texture2D" uid="uid://bhoy4lk48d6n2" path="res://337 sin título_20251021181434.PNG" id="14_caauc"]
+[ext_resource type="Script" uid="uid://t36hikvv2xlc" path="res://pene.gd" id="14_wj6ln"]
 [ext_resource type="Texture2D" uid="uid://sn3bbp22cvoq" path="res://337 sin título_20251021181436.PNG" id="15_2xgey"]
 [ext_resource type="Texture2D" uid="uid://mhwvnr3ay0ta" path="res://344 sin título_20251026213150.PNG" id="15_jpejr"]
 [ext_resource type="Texture2D" uid="uid://b5o2gjqy0bsvn" path="res://344 sin título_20251026213148.PNG" id="16_8eeud"]
@@ -43,12 +42,19 @@
 [ext_resource type="Texture2D" uid="uid://bsfv4qmqo556a" path="res://344 sin título_20251026213152.PNG" id="18_uaicf"]
 [ext_resource type="Texture2D" uid="uid://b6js2ibib3an4" path="res://337 sin título_20251021181444.PNG" id="19_wuv2y"]
 [ext_resource type="Texture2D" uid="uid://bn6j4hpqrgf1b" path="res://337 sin título_20251021181446.PNG" id="20_4iqmy"]
+[ext_resource type="Texture2D" uid="uid://dcacgebma5j14" path="res://340 sin título_Restaurado3_20251025140322.PNG" id="21_jpejr"]
 [ext_resource type="Texture2D" uid="uid://dm70m8owgk7gu" path="res://329 sin título_20251025195640.PNG" id="28_xru3o"]
-[ext_resource type="Texture2D" uid="uid://bobt36g5lw42r" path="res://340 sin título_Restaurado2_20251025140455.PNG" id="29_tqiuj"]
-[ext_resource type="Texture2D" uid="uid://c1wkt53xvvmnj" path="res://340 sin título_Restaurado2_20251025140457.PNG" id="30_88xu0"]
 [ext_resource type="Texture2D" uid="uid://bwtktrxb1jeim" path="res://340 sin título_Restaurado2_20251025140459.PNG" id="31_3r3y3"]
 [ext_resource type="Texture2D" uid="uid://3t1g87m2fg34" path="res://340 sin título_Restaurado2_20251025140501.PNG" id="32_wj6ln"]
-[ext_resource type="Script" uid="uid://bsmeylgopd8j5" path="res://ladder.gd" id="40_8eeud"]
+[ext_resource type="Texture2D" uid="uid://dkwk5gmxy627e" path="res://IMG_7186.JPG" id="38_8eeud"]
+[ext_resource type="Texture2D" uid="uid://duq6iel2u4rle" path="res://329 sin título_20251026162129.PNG" id="48_wj6ln"]
+[ext_resource type="FontFile" uid="uid://bhe0md5wbxb2h" path="res://Jersey_10_fuentedetexto/Jersey10-Regular.ttf" id="49_8eeud"]
+[ext_resource type="Script" uid="uid://d33i05nx4lalq" path="res://node_2d.gd" id="49_eiu1u"]
+[ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="49_jpejr"]
+[ext_resource type="Script" uid="uid://w126dgw6dpps" path="res://peeeene_3.gd" id="52_uaicf"]
+[ext_resource type="Script" uid="uid://cxpbcyyg5ak7d" path="res://fat_rat_chat.gd" id="53_637uf"]
+[ext_resource type="Texture2D" uid="uid://02wfo47ynhm6" path="res://fetuccini.png" id="53_cjwtt"]
+[ext_resource type="Texture2D" uid="uid://dn6kgljyuwcd5" path="res://dialogues/intro 2/324 sin título_20251003161413.PNG" id="55_3um7j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_eiu1u"]
 animations = [{
@@ -105,18 +111,6 @@ size = Vector2(197.52942, 319.09076)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rcdd3"]
 size = Vector2(2679, 34.25)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c11n"]
-size = Vector2(352, 7)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptikf"]
-size = Vector2(202, 108)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xru3o"]
-size = Vector2(125, 40)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_63o1a"]
-size = Vector2(363, 10)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_lfyjl"]
 animations = [{
 "frames": [{
@@ -138,14 +132,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("17_63o1a")
-}],
-"loop": true,
-"name": &"climb_down",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": ExtResource("18_uaicf")
 }],
 "loop": true,
@@ -155,6 +141,9 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("13_caauc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_jpejr")
 }],
 "loop": true,
 "name": &"fall",
@@ -225,12 +214,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("29_tqiuj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_88xu0")
-}, {
-"duration": 1.0,
 "texture": ExtResource("31_3r3y3")
 }, {
 "duration": 1.0,
@@ -239,6 +222,17 @@ animations = [{
 "loop": false,
 "name": &"push",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_8eeud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_63o1a")
+}],
+"loop": false,
+"name": &"scared",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -278,21 +272,206 @@ animations = [{
 "texture": ExtResource("20_4iqmy")
 }],
 "loop": true,
-"name": &"walking",
+"name": &"walk",
 "speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2pwld"]
 radius = 77.77246
-height = 330.60132
+height = 384.9004
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ws7ty"]
-size = Vector2(147.63544, 147.01062)
+[sub_resource type="Animation" id="Animation_uaicf"]
+resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.71),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uaicf"]
-size = Vector2(60, 267)
+[sub_resource type="Animation" id="Animation_cjwtt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../dialogo:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_637uf"]
+resource_name = "nono"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../dialogo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3um7j"]
+resource_name = "mostrar"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../dialogo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_637uf"]
+_data = {
+&"RESET": SubResource("Animation_cjwtt"),
+&"mostrar": SubResource("Animation_3um7j"),
+&"nono": SubResource("Animation_637uf"),
+&"show": SubResource("Animation_uaicf")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3um7j"]
+radius = 168.00298
+
+[sub_resource type="Animation" id="Animation_8eeud"]
+resource_name = "fade_out"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/BlackBackground1468370534d5s:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_eiu1u"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/BlackBackground1468370534d5s:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uaicf"]
+_data = {
+&"RESET": SubResource("Animation_eiu1u"),
+&"fade_out": SubResource("Animation_8eeud")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eiu1u"]
+radius = 257.04865
+
+[sub_resource type="Animation" id="Animation_sfgxr"]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../BlackBackground1468370534d5s:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(4.633333, 5.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_w21pn"]
+resource_name = "fade in but yellow"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 1.4666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../BlackBackground1468370534d5s:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(4.3, 5.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ye2u"]
+_data = {
+&"RESET": SubResource("Animation_sfgxr"),
+&"fade in but yellow": SubResource("Animation_w21pn")
+}
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0.9539346, 0.95112973, 0.94828516, 1)
+position = Vector2(1181, 311)
+scale = Vector2(0.3371993, 0.36676535)
+texture = ExtResource("48_wj6ln")
+metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1181, 311)
@@ -300,11 +479,13 @@ scale = Vector2(0.367, 0.367)
 texture = ExtResource("1_dfjso")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1181, 310)
+position = Vector2(1185, 304)
 scale = Vector2(0.33761048, 0.36666667)
 sprite_frames = SubResource("SpriteFrames_eiu1u")
 animation = &"idle"
 frame_progress = 0.8942934
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="Area2D" type="Area2D" parent="AnimatedSprite2D"]
 scale = Vector2(1, 1.0000001)
@@ -315,17 +496,6 @@ position = Vector2(-2497.9795, 814.09125)
 scale = Vector2(1, 1.0000007)
 shape = SubResource("RectangleShape2D_3tmio")
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-modulate = Color(0.9539346, 0.95112973, 0.94828516, 1)
-position = Vector2(1181, 311)
-scale = Vector2(0.3371993, 0.36676535)
-texture = ExtResource("1_ptikf")
-metadata/_edit_lock_ = true
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-3, 9)
 metadata/_edit_lock_ = true
@@ -335,68 +505,157 @@ position = Vector2(1336, 689.875)
 shape = SubResource("RectangleShape2D_rcdd3")
 metadata/_edit_lock_ = true
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(2121, 653)
+[node name="PENE" type="CharacterBody2D" parent="."]
+script = ExtResource("14_wj6ln")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-323, -261.5)
-shape = SubResource("RectangleShape2D_4c11n")
-
-[node name="Area2D" type="Area2D" parent="StaticBody2D2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2/Area2D"]
-position = Vector2(11, -2)
-shape = SubResource("RectangleShape2D_ptikf")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2/Area2D"]
-position = Vector2(-124.5, 39)
-shape = SubResource("RectangleShape2D_xru3o")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-441, -425)
-shape = SubResource("RectangleShape2D_63o1a")
-
-[node name="J3FFREY" type="CharacterBody2D" parent="."]
-position = Vector2(796, 616.00006)
-scale = Vector2(0.37931278, 0.3741228)
-script = ExtResource("2_ih1lc")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="J3FFREY"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PENE"]
 texture_filter = 1
-position = Vector2(-1057.1752, -10.691823)
-scale = Vector2(0.9846256, 0.95413786)
+position = Vector2(394.99994, 612)
+scale = Vector2(0.37348107, 0.35696474)
 sprite_frames = SubResource("SpriteFrames_lfyjl")
-animation = &"climb_idle"
+animation = &"idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="J3FFREY"]
-position = Vector2(-1030.8115, -18.710648)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PENE"]
+position = Vector2(405, 609)
+scale = Vector2(0.37931278, 0.3741228)
 shape = SubResource("CapsuleShape2D_2pwld")
 debug_color = Color(0.94981796, 1.0588765e-06, 0.57402766, 0.41960785)
 
-[node name="Camera2D" type="Camera2D" parent="J3FFREY"]
-position = Vector2(-405.99734, -676.24884)
-scale = Vector2(0.24840175, -1.4319777)
+[node name="Camera2D" type="Camera2D" parent="PENE"]
+position = Vector2(642, 362.99994)
+scale = Vector2(0.09422196, -0.53573555)
 
-[node name="Area2D" type="Area2D" parent="J3FFREY"]
-position = Vector2(-1030.8116, -32.075195)
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("49_eiu1u")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="J3FFREY/Area2D"]
-position = Vector2(5.272794, 21.383415)
-shape = SubResource("RectangleShape2D_ws7ty")
+[node name="Label" type="Label" parent="Node2D"]
+offset_left = 145.0
+offset_top = 464.0
+offset_right = 534.0
+offset_bottom = 521.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("49_8eeud")
+theme_override_font_sizes/font_size = 36
+text = "¡Presiona \"E\" para interactuar!"
+vertical_alignment = 1
 
-[node name="Ladder" type="Area2D" parent="." groups=["Ladder"]]
-position = Vector2(1562, 517)
-script = ExtResource("40_8eeud")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Label"]
+libraries = {
+&"": SubResource("AnimationLibrary_637uf")
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ladder"]
-position = Vector2(-3, 12.5)
-shape = SubResource("RectangleShape2D_uaicf")
+[node name="Area2D" type="Area2D" parent="Node2D"]
+metadata/_edit_group_ = true
 
-[connection signal="area_entered" from="AnimatedSprite2D/Area2D" to="AnimatedSprite2D/Area2D" method="_on_area_entered"]
-[connection signal="area_exited" from="AnimatedSprite2D/Area2D" to="AnimatedSprite2D/Area2D" method="_on_area_exited"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D"]
+position = Vector2(342, 528)
+shape = SubResource("CircleShape2D_3um7j")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_uaicf")
+}
+
+[node name="BlackBackground1468370534d5s" type="Sprite2D" parent="AnimationPlayer"]
+visible = false
+modulate = Color(1, 1, 1, 0)
+position = Vector2(761, 497)
+texture = ExtResource("49_jpejr")
+
+[node name="peeeene3" type="Node2D" parent="."]
+script = ExtResource("52_uaicf")
+
+[node name="fat rat chat" type="Area2D" parent="peeeene3"]
+position = Vector2(2120, 648)
+script = ExtResource("53_637uf")
+
+[node name="Label" type="Label" parent="peeeene3/fat rat chat"]
+offset_left = -1975.0
+offset_top = -184.0
+offset_right = -1586.0
+offset_bottom = -127.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("49_8eeud")
+theme_override_font_sizes/font_size = 36
+text = "¡Presiona \"E\" para interactuar!"
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="peeeene3/fat rat chat/Label"]
+libraries = {
+&"": SubResource("AnimationLibrary_637uf")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="peeeene3/fat rat chat"]
+shape = SubResource("CircleShape2D_eiu1u")
+
+[node name="dialogo" type="Control" parent="peeeene3"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2166.0
+offset_top = 653.0
+offset_right = 2246.0
+offset_bottom = 653.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="NinePatchRect" type="NinePatchRect" parent="peeeene3/dialogo"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = -219.0
+offset_right = 105.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("53_cjwtt")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="peeeene3/dialogo/NinePatchRect"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 34.0
+offset_right = 228.0
+offset_bottom = 123.0
+theme_override_fonts/normal_font = ExtResource("49_8eeud")
+theme_override_font_sizes/normal_font_size = 36
+text = "Rata Gorda:"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="peeeene3/dialogo/NinePatchRect"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 80.0
+offset_right = 238.0
+offset_bottom = 117.0
+theme_override_fonts/normal_font = ExtResource("49_8eeud")
+theme_override_font_sizes/normal_font_size = 29
+text = "ñam ñam ñam"
+
+[node name="324SinTítulo20251003161413" type="Sprite2D" parent="."]
+position = Vector2(1098.5, 303)
+scale = Vector2(1.4723958, 1)
+texture = ExtResource("55_3um7j")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="324SinTítulo20251003161413"]
+libraries = {
+&"": SubResource("AnimationLibrary_8ye2u")
+}
+autoplay = "fade in but yellow"
+
 [connection signal="body_entered" from="AnimatedSprite2D/Area2D" to="AnimatedSprite2D/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="AnimatedSprite2D/Area2D" to="AnimatedSprite2D/Area2D" method="_on_body_exited"]
-[connection signal="area_entered" from="J3FFREY/Area2D" to="J3FFREY" method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="J3FFREY/Area2D" to="J3FFREY" method="_on_area_2d_area_exited"]
-[connection signal="body_entered" from="Ladder" to="Ladder" method="_on_body_entered"]
-[connection signal="body_exited" from="Ladder" to="Ladder" method="_on_body_exited"]
+[connection signal="body_entered" from="Node2D/Area2D" to="Node2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Node2D/Area2D" to="Node2D" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="peeeene3/fat rat chat" to="peeeene3" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="peeeene3/fat rat chat" to="peeeene3/fat rat chat" method="_on_body_entered"]
+[connection signal="body_exited" from="peeeene3/fat rat chat" to="peeeene3" method="_on_area_2d_body_exited"]
+[connection signal="body_exited" from="peeeene3/fat rat chat" to="peeeene3/fat rat chat" method="_on_body_exited"]

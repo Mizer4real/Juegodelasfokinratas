@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://wuh6jdbknv7y"]
+
+[ext_resource type="Texture2D" uid="uid://02wfo47ynhm6" path="res://fetuccini.png" id="1_7ebmd"]
+[ext_resource type="FontFile" uid="uid://bhe0md5wbxb2h" path="res://Jersey_10_fuentedetexto/Jersey10-Regular.ttf" id="2_cmsvf"]
+
+[node name="dialogo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 11.0
+offset_right = -3.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = -219.0
+offset_right = 194.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7ebmd")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 26.0
+offset_right = 219.0
+offset_bottom = 115.0
+theme_override_fonts/normal_font = ExtResource("2_cmsvf")
+theme_override_font_sizes/normal_font_size = 36
+text = "Rata Gorda:"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 70.0
+offset_right = 227.0
+offset_bottom = 107.0
+theme_override_fonts/normal_font = ExtResource("2_cmsvf")
+theme_override_font_sizes/normal_font_size = 29
+text = "ñam ñam ñam"

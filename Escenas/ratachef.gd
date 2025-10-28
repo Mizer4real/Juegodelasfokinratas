@@ -1,22 +1,6 @@
 extends Node2D
 
 
-<<<<<<< HEAD
-            
-            
-=======
-
-
-func _ready(): 
-   
-    DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
-    
-    DialogueManager.show_dialogue_balloon(MYDIALOGUE_1, "start")
-    
-func _on_dialogue_ended(resource):
-    if resource == MYDIALOGUE_1:
-        DialogueManager.show_dialogue_balloon(MYDIALOGUE_9, "start")
-
 
     
 
@@ -50,8 +34,3 @@ func _on_dialogue_ended(resource):
 
 
             
-
-
-    
-        
->>>>>>> 8c125d2d663f62313dc236aa3833345a1619429a

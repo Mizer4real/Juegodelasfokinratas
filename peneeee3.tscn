@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5fp3simjisy8"]
+
+[ext_resource type="Script" uid="uid://d33i05nx4lalq" path="res://node_2d.gd" id="1_sa3yi"]
+[ext_resource type="Texture2D" uid="uid://boniw6kdh75np" path="res://325 sin título_20251007200539.PNG" id="2_klmqr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vq832"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_klmqr")
+}],
+"loop": true,
+"name": &"pene",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_sa3yi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vq832")
+animation = &"pene"

@@ -1,0 +1,160 @@
+[gd_scene load_steps=14 format=3 uid="uid://dvdn8okfj1r1b"]
+
+[ext_resource type="Script" uid="uid://bjkwf0l14kt42" path="res://inicio_3_porfavornotecorrompas.gd" id="1_mu6ut"]
+[ext_resource type="Texture2D" uid="uid://d2ucjlnckpq24" path="res://323 sin título_20250929214215 2.PNG" id="1_q7qua"]
+[ext_resource type="Texture2D" uid="uid://ctwvxtodx03ju" path="res://Elementos/318 sin título_20250919174240.PNG" id="2_sigdv"]
+[ext_resource type="Texture2D" uid="uid://bvsoq00jlo70v" path="res://318 sin título_20250929222031.PNG" id="4_c08j0"]
+[ext_resource type="Texture2D" uid="uid://b1uq1ael3sknq" path="res://318 sin título_20250929223018.PNG" id="4_pex0h"]
+[ext_resource type="Texture2D" uid="uid://bbfmkqsn7j2ta" path="res://318 sin título_20250929223118.PNG" id="5_mu6ut"]
+[ext_resource type="Texture2D" uid="uid://cet2nikqg77r7" path="res://318 sin título_20250928223033.PNG" id="6_d045d"]
+[ext_resource type="Texture2D" uid="uid://donwmj4q50oba" path="res://318 sin título_20250928222635.PNG" id="7_gnymu"]
+[ext_resource type="Texture2D" uid="uid://yfv0h6bet5ko" path="res://318 sin título_20250928222542.PNG" id="8_biah7"]
+[ext_resource type="Texture2D" uid="uid://c2bctkr5hekpq" path="res://black-background-1468370534d5s.jpg" id="10_d045d"]
+
+[sub_resource type="Animation" id="Animation_81jc4"]
+resource_name = "peeneeee"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/318SinTítulo20250919174240:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.46666667, 0.6333333, 0.8666667, 1, 1.1666666, 1.3, 1.4666667),
+"transitions": PackedFloat32Array(0.8408967, 0.4061259, 2.2973986, 0.4506248, 1.9318726, 0.4506248, 1, 0.4506248),
+"update": 0,
+"values": [Vector2(637, -1000), Vector2(637, 237.00002), Vector2(637, 205), Vector2(637, 235), Vector2(637, 219), Vector2(637, 235), Vector2(637, 224.00002), Vector2(637, 235)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cerrar:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.76666665),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("inicio:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.73333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BlackBackground1468370534d5s:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.033333335, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_q7qua"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/318SinTítulo20250919174240:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(637, 237.00002)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cerrar:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("inicio:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sigdv"]
+_data = {
+&"RESET": SubResource("Animation_q7qua"),
+&"peeneeee": SubResource("Animation_81jc4")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_mu6ut")
+
+[node name="323SinTítulo202509292142152" type="Sprite2D" parent="."]
+position = Vector2(639, 361.25003)
+scale = Vector2(0.6687499, 0.67175937)
+texture = ExtResource("1_q7qua")
+metadata/_edit_lock_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_sigdv")
+}
+
+[node name="318SinTítulo20250919174240" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(637, 237.00002)
+scale = Vector2(0.33333334, 0.33935186)
+texture = ExtResource("2_sigdv")
+
+[node name="cerrar" type="TextureButton" parent="."]
+offset_left = 407.99997
+offset_top = 504.00003
+offset_right = 2328.0
+offset_bottom = 1584.0
+scale = Vector2(0.24450625, 0.24895683)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_c08j0")
+texture_pressed = ExtResource("4_pex0h")
+texture_hover = ExtResource("5_mu6ut")
+
+[node name="inicio" type="TextureButton" parent="."]
+offset_left = 407.99997
+offset_top = 360.00003
+offset_right = 2328.0
+offset_bottom = 1440.0
+scale = Vector2(0.24450625, 0.24895683)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("6_d045d")
+texture_pressed = ExtResource("7_gnymu")
+texture_hover = ExtResource("8_biah7")
+
+[node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(496, 568)
+texture = ExtResource("10_d045d")
+
+[connection signal="pressed" from="cerrar" to="." method="_on_cerrar_pressed"]
+[connection signal="pressed" from="inicio" to="." method="_on_inicio_pressed"]

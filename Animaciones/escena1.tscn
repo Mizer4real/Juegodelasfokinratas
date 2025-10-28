@@ -103,7 +103,6 @@ script = ExtResource("3_0enja")
 metadata/_edit_group_ = true
 
 [node name="BlackBackground1468370534d5s" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(641.00006, 357.5)
 scale = Vector2(0.69166666, 0.5914062)
 texture = ExtResource("2_fndph")
